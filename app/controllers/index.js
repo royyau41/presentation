@@ -9,12 +9,6 @@ var pushNo=require('pushNotification').pushNotification;
 
 var index={
 	init:function(){
-		
-		win.exitOnClose=true;
-		win.open();
-		db.init();
-		pushNo.getDeviceToken();
-		//asdasdas
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
@@ -23,6 +17,12 @@ var index={
 			}
 		});
 	
+		win.exitOnClose=true;
+		win.open();
+		db.init();
+		pushNo.getDeviceToken();
+		//asdasdas
+		
 		if (OS_ANDROID){
 			win.addEventListener('android:back', function(e) {
 			     var dialog = Ti.UI.createAlertDialog({
