@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFOpenFlowView.m \
-  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFOpenFlowView.h \
-  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFItemView.h \
-  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFOpenFlowConstants.h \
-  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.h
+  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFOpenFlowView.m \
+  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFOpenFlowView.h \
+  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFItemView.h \
+  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFOpenFlowConstants.h \
+  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.h
