@@ -1,1 +1,1 @@
-/Users/Roy/Documents/Titanium_Studio_Workspace/presentation/Resources/iphone/alloy/controllers/trans/transMainLayout.js
+/Users/ast/Documents/Titanium_Studio_Workspace/presentation/Resources/iphone/alloy/controllers/trans/transMainLayout.js
