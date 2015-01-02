@@ -17,7 +17,7 @@ var index={
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
-			//Alloy.Globals.Loading.hide();
+			//Alloy.Globals.Loading.hide();sa
 			chkbit=1;
 			}
 		});
