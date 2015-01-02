@@ -1,1 +1,1 @@
-/Users/Roy/Documents/Titanium_Studio_Workspace/presentation/Resources/iphone/alloy/styles/neEstate/neEstateDetailTmpl2.js
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/iphone/alloy/styles/neEstate/neEstateDetailTmpl2.js

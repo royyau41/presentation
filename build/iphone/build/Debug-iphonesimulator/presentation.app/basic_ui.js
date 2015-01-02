@@ -1,1 +1,1 @@
-/Users/Roy/Documents/Titanium_Studio_Workspace/presentation/Resources/iphone/basic_ui.js
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/iphone/basic_ui.js

@@ -1,1 +1,1 @@
-/Users/Roy/Documents/Titanium_Studio_Workspace/presentation/Resources/iphone/alloy/controllers/neEstate/neEstateDetail.js
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/iphone/alloy/controllers/neEstate/neEstateDetail.js

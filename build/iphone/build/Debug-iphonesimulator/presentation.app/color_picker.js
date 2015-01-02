@@ -1,1 +1,1 @@
-/Users/Roy/Documents/Titanium_Studio_Workspace/presentation/Resources/iphone/color_picker.js
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/iphone/color_picker.js
