@@ -9,7 +9,7 @@ var pushNo=require('pushNotification').pushNotification;
 
 var index={
 	init:function(){
-		//asdasdas
+		
 		win.exitOnClose=true;
 		win.open();
 		db.init();
