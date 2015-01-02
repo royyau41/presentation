@@ -1,0 +1,7 @@
+<Alloy>
+	<View id='newdevTmpl1Wrap'  >
+			<ImageView id='newdevTmpl1Image'></ImageView>				
+			<Label id='newdevTmpl1Bld' >海富中心</Label>
+			<View class='spaceHeight5' id='space' height='25dp' width='Ti.UI.FILL'  ></View>
+	</View>
+</Alloy>

@@ -1,0 +1,64 @@
+<Alloy>
+	<View left='0dp' height=Ti.UI.FILL>
+		<!--<View id="tranSearch">
+			<Label id='tranSearchDist'>地區</Label>
+			<TextField id="distInput"/>
+			<Label id='tranSearchDist'>物業</Label>
+			<TextField id="distInput"/>
+			<Label id='tranSearchDist'>價格</Label>
+			<TextField id="distInput"/>
+			<Label id='tranSearchDist'>成交日期</Label>
+			<TextField id="distInput"/>
+			<Label id='' left="8" top="20">至</Label>
+			<TextField id="distInput"/>
+			<Button id="searchBtn" title=""></Button>
+	</View>-->
+	<View id='tranResMain'>
+		<View id="tranResBtn">
+			<View id='tranResDistBtn'>
+				
+			</View>
+			<View id='tranResEstBtn' visible='false'>
+				
+			</View>
+			<!--gen in controller js-->		
+		</View>
+		<View id="tranRes">
+			<ScrollView id='tranScroll'>
+				<TableView id="tranReslist">
+					<HeaderView >
+						<View id="tranResHeader">
+							<Label id="unit" width="110" left="15" top="5" color="#ffffff">單位</Label>
+							<Label id="floor" width="60" top="5" color="#ffffff">樓層</Label>
+							<Label id="garea" width="65" top="5" color="#ffffff">建築\n面積</Label>
+							<Label id="narea" width="65" top="5"color="#ffffff">實用\n面積</Label>
+							<Label id="price" width="120" top="5" color="#ffffff">成交價</Label>
+							<Label id="avaprice" width="65" top="5" color="#ffffff">建築\n呎價</Label>
+							<Label id="avnprice" width="65" top="5" color="#ffffff">實用\n呎價</Label>
+							<Label id="date" width="100" top="5" color="#ffffff">成交\n日期</Label>
+							<Label id="usage" width="65" top="5" color="#ffffff">類別</Label> 
+							<Label id="source" width="80" top="5" color="#ffffff">資料\n來源</Label>						
+						</View>					
+					</HeaderView>	
+					<TableViewRow id="">
+						<View id="transItem">
+							<Label id="" width="110" left="15" top="10" >單位</Label>
+							<Label id="" width="60" top="10">高</Label>
+							<Label id="" width="65" top="10">6000</Label>
+							<Label id="" width="65" top="10">5000</Label>
+							<Label id="" width="120" top="10">10,252,123</Label>
+							<Label id="" width="65" top="10">1000</Label>
+							<Label id="" width="65" top="10">1000</Label>
+							<Label id="" width="100" top="10">2014/03/02</Label>
+							<Label id="" width="65" top="10">工業</Label> 
+							<Label id="" width="80" top="10">田土廳</Label>						
+						</View>					
+					</TableViewRow>				
+				</TableView>
+			</ScrollView>
+			
+			
+		</View>	
+	</View>
+	</View>
+</Alloy>

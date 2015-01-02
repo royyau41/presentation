@@ -1,0 +1,20 @@
+<Alloy>
+	<View id="movableview">
+		<View id="shadowview">
+			<View id="navview">
+				<Button id="returnButton" />
+				<ImageView id='titleImg'/>
+				<Button id="leftButton" />
+				<!--<Button id="sortingButton" />-->
+				<Button id="rightButton" />
+
+			</View>	
+			<View id="mainContentView" ></View>
+						
+		</View>
+		<View id='menuList'>
+			<Require type='view'  src="menu/menurow" id="menu"/>
+		</View>
+	</View>
+	
+</Alloy>

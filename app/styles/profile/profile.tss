@@ -1,0 +1,42 @@
+"#profileView":{
+	borderColor:Alloy.Globals.showdowColor,
+	borderRadius:5,
+	height:500,
+	layout:'vertical',
+	top:'50',
+	//backgroundColor:'white',
+	backgroundGradient: Alloy.Globals.basicBackgroundColor,
+	width:'70%',
+	left:'15%',
+	right:'15%'
+}
+
+,"#companyNameLabel":{
+	color:'#006865',
+	font:{fontSize:24,fontWeight:'bold'},
+	left:270,
+	top:20
+}
+,"#profileContent":{
+	left:20,
+	top:20
+}
+,"#profileContentView":{
+	borderColor:Alloy.Globals.showdowColor,
+	borderRadius:5,
+	height:Ti.UI.SIZE,
+	layout:'vertical',
+	top:100,
+	//backgroundColor:'white',
+	backgroundGradient: Alloy.Globals.basicBackgroundColor,
+	width:'70%',
+	left:'15%',
+	right:'15%'
+}
+
+,"#companyContentLabel":{
+	color:'#555',
+	font:{fontSize:20},
+	left:20,
+	top:10	
+}

@@ -1,0 +1,24 @@
+<Alloy>
+	<TableViewRow id='reTableRow'>
+		<View  id='rePropTmpl1RowView'>
+			<ImageView id='reNewpic'>
+			</ImageView>
+			<View layout='vertical' id ='rePropImageView'>
+				<ImageView id='rePropTmpl1Image'>
+				</ImageView>
+				
+			</View>
+			<View id ='rePropTmpl1MainDetailView'  >
+				
+					<View id='rePropTmpl1BestSale'>
+					</View>
+					<Label id='rePropTmpl1Addr' />
+				
+				<View id='rePropTmpl1SubDetailView'  >
+					<!--Create View in js-->
+				</View>
+				<Label id='rePropTmpl1Order' />
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy> 

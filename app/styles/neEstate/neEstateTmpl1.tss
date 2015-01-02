@@ -1,0 +1,25 @@
+"#nePropTmpl1Wrap":{
+	width:'220dp',
+	height:'220dp',
+	top:'20dp',
+	left:'20dp',
+	backgroundImage:'/recommend/propBg.png',
+	borderRadius:10,
+	layout:'vertical'
+	
+}
+
+,"#nePropTmpl1Image":{
+	//image : "/temp/smallPropImg.jpeg",
+	top:'10dp',
+	width:'90%',
+	height:'70%'
+	
+}
+,"#nePropTmpl1Bld":{
+	
+	font:{fontSize:16,fontWeight:'bold'},
+	left:'10dp',
+	top:'10dp',
+	color:'#575757'
+}

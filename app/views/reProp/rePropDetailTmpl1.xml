@@ -1,0 +1,16 @@
+<Alloy>
+		<ScrollView id='rePropDeatilTmpl1Main' layout='vertical'>
+					<ScrollView id='rePropDtlScrollImgView'  >
+						
+					</ScrollView>
+					
+					<View id="rePropDtlAddrView">
+						<Label id='rePropDtlAddr'>上環德輔道中262號一洲大廈</Label>
+					</View>
+					
+					<View id='rePropDtlInfoView'>
+						
+					</View>	
+		</ScrollView>
+
+</Alloy>

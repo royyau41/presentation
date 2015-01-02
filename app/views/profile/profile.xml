@@ -1,0 +1,17 @@
+<Alloy>
+	<View>
+		<View  id='profileView'>
+			<Label id='companyNameLabel'>創思商業有限公司</Label>	
+			<Label id='profileContent'>創立於1986年，香港四大地產代理之一。\n我們以「給您最好的選擇」的理念，\n為每一位尊貴客戶提供最全面、最專的服務，\n創立20多年來，屢獲業界殊榮，地位備受肯定。</Label>
+				
+		</View>	
+		
+		<!--<View  id='profileContentView'>
+			<Label id='companyContentLabel'>
+				創立於1986年，香港四大地產代理之一。
+				我們以「給您最好的選擇」的理念， 
+				為每一位尊貴客戶提供最全面、最專的服務，
+				創立20多年來，屢獲業界殊榮，地位備受肯定。</Label>	
+		</View>-->
+	</View>
+</Alloy>

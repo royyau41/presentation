@@ -1,0 +1,51 @@
+"#newdevDeatilTmpl1Main":{
+	layout:'vertical',
+	showVerticalScrollIndicator:false,
+	showHorizontalScrollIndicator:false,
+	scrollType:'vertical',
+	height:Ti.UI.FILL,
+	width:'100%',
+	contentWidth:'100%',
+	
+}
+	,"#newdevDtlAddrView":{
+		left:'20dp',
+		top:'20dp',
+		height:Ti.UI.SIZE,
+		borderRadius:5,
+		//backgroundColor:'#1b846f',
+		layout:'vertical',
+		backgroundGradient:{
+	        type: 'linear',
+	        colors: [ { color: '#23aa90', offset: 0}, { color: '#21a088', offset: 0.45 }  , { color: '#1b846f', offset: 1 }],
+	    },
+		width:Ti.UI.SIZE		
+	}
+		,"#newdevDtlAddr":{
+			left:'10dp',
+			top:'5dp',		
+			height:22,	
+			bottom:10,
+			color:'#efefef',
+			font:{fontSize:20,fontWeight:'bold'}
+		}
+	"#newdevDtlScrollImgView":{
+		showVerticalScrollIndicator:false,
+		showHorizontalScrollIndicator:false,
+		top:20,
+		left:20,
+		right:20,
+		borderColor:'#CACACA',
+		borderWidth:'1',
+		borderRadius:5,
+		backgroundGradient:{
+	        type: 'linear',
+	        colors: [ { color: '#EEEEEE', offset: 0}, { color: '#EEEEEE', offset: 0.45 }  , { color: '#EEEEEE', offset: 1 }],
+	  },
+		width:Ti.UI.FILL,
+		height:'80%',
+		contentWidth:'auto',
+	  	contentHeight: 'auto',
+	  	layout:'horizontal'
+	}
+	

@@ -1,0 +1,14 @@
+<Alloy>
+	
+				<View id='mainDetailView'  >
+					<ScrollableView id='neEstateDtlScrollView' currentPage=2>
+						
+						
+					</ScrollableView>
+					<View id='neEstateDtlBtnView'>
+						<Button id='neEstateDtlPrev'></Button>
+						<Button id='neEstateDtlNext'></Button>
+					</View>
+				</View>
+	
+</Alloy>

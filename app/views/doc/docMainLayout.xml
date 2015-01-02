@@ -1,0 +1,6 @@
+  <Alloy>
+	<ScrollView id='docMainLayoutView'>
+		<!--<TableView id='doc尸Table'>
+	</TableView>-->
+	</ScrollView>
+</Alloy>

@@ -1,0 +1,25 @@
+"#docTmpl2Wrap":{
+	width:'300dp',
+	height:'300dp',
+	top:'20dp',
+	left:'20dp',
+	backgroundImage:'/recommend/propBg.png',
+	borderRadius:10,
+	layout:'vertical'
+	
+}
+
+,"#docTmpl2Image":{
+	//image : "/temp/smallPropImg.jpeg",
+	top:'10dp',
+	width:'90%',
+	height:'70%'
+	
+}
+,"#docTmpl2Title":{
+	
+	font:{fontSize:16,fontWeight:'bold'},
+	left:'10dp',
+	top:'10dp',
+	color:'#575757'
+}

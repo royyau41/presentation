@@ -1,0 +1,61 @@
+<Alloy>
+	<ScrollView id='morMainView'>
+		<View id='morTopView'>
+			<View id='morTopSearchParaView'>
+				<View class='morTopSearchParaSubView' >
+					<Label class='morTopSearchParaSubLabel'>業主叫價：</Label>
+					<TextField class='morTopSearchParaSubField' value='2000000' id='price'/>
+				</View>
+				<View class='morTopSearchParaSubView' >
+					<Label class='morTopSearchParaSubLabel'>按揭比率(%)：</Label>
+					<TextField class='morTopSearchParaSubField' value='70' id='percent'/>
+				</View>
+				<View class='morTopSearchParaSubView' >
+					<Label class='morTopSearchParaSubLabel'>利率(%)：</Label>
+					<TextField class='morTopSearchParaSubField' value='2.25' id='rate'/>
+				</View>
+				<View class='morTopSearchParaSubView' >
+					<Label class='morTopSearchParaSubLabel'>按揭年期：</Label>
+					<TextField class='morTopSearchParaSubField'value='20' id='period'/>
+				</View>
+				<View class='morTopSearchParaSubView' >
+					<Label class='morTopSearchParaSubLabel'>貸款金額：</Label>
+					<TextField class='morTopSearchParaSubField' id='principal' editable='false'/>
+				</View>
+			</View>
+			<View id='morTopSmlResView'>
+				<View class='morTopSmlResSubView' >
+					<Label class='morTopSmlResSubLabel' >首期：</Label>
+					<Label class='morTopSmlResSubRes' id='Deposit'></Label>
+				</View>
+				<View class='morTopSmlResSubView' >
+					<Label class='morTopSmlResSubLabel'>每用供款：</Label>
+					<Label class='morTopSmlResSubRes' id='MonthlyPayment'></Label>
+				</View>
+				<View class='morTopSmlResSubView' >
+					<Label class='morTopSmlResSubLabel'>總利息：</Label>
+					<Label class='morTopSmlResSubRes' id='TotalInterest'></Label>
+				</View>
+				<View class='morTopSmlResSubView' >
+					<Label class='morTopSmlResSubLabel'>總貸款金額：</Label>
+					<Label class='morTopSmlResSubRes' id='TotalPayment'></Label>
+				</View>
+				<View class='morTopSmlResSubView' >
+					<Button id='morTopSmlResCal' ></Button>
+				</View>
+			</View>
+		</View>
+		
+		<ScrollView id='morScroll'>
+				<TableView id="morReslist">
+					<HeaderView >
+						<View id="morResHeader">
+													
+						</View>					
+					</HeaderView>	
+									
+				</TableView>
+		</ScrollView>
+		
+	</ScrollView>
+</Alloy>

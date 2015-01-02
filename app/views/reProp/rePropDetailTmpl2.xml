@@ -1,0 +1,183 @@
+<Alloy>
+		<View id='tmpl2Main' >
+			<ScrollView id='leftSrlView'>
+				<Label id='leftTitle' text='出售'/>
+				<View class='leftItemView' id ='priceView'>
+						<View class='leftcontainView' >
+							<Label class='leftItemLabel' id='priceLabel' text='售價'></Label>
+							<View class='leftItemValueView'>
+								<View class='leftItemHorView' id='priceItemView'>
+									<Label class='' id = 'price' text='1,630'></Label>
+									<Label class='Unit' id = 'priceUnit' text='萬元'></Label>
+									
+								</View>
+								<View class='leftItemHorView'>
+									<Label class='leftItemValueLabel' class="blue" id='avgprice'>@ 111</Label>
+								</View>
+							</View>
+						</View>
+						<View class='bottomLine'/>
+				</View>
+			
+				<View class='leftItemView' id ='rentView'>
+					<View class='leftcontainView'>
+							<Label class='leftItemLabel' id='priceLabel' text='租金'></Label>
+							<View class='leftItemValueView'>
+								<View class='leftItemHorView'>
+									<Label class='leftItemValue' id='rent' text='1234'></Label>
+								</View>
+								<View class='leftItemHorView'>
+									<Label class='leftItemValueLabel' class="blue" id='avgrent'>@ 111</Label>
+								</View>
+						    </View>
+					</View>
+					<View class='bottomLine'/>
+				</View>
+				<View class='leftItemView1'>
+					<View class='leftcontainView'>
+						<Label class='leftItemLabel' id='areaLabel' text='面積'></Label>
+						<View class='leftItemValueView'>
+							<View class='leftItemHorView'>
+								<Label class='valueTitle' id = 'netareaUnit'text='實用 :'></Label>
+								<Label class='rightItemValue' id = 'netarea'text='1,146 呎'></Label>								
+							</View>
+							<View class='leftItemHorView'>
+								<Label class='valueTitle' id = 'netareaUnit'text='建築 :'></Label>
+								<Label class='rightItemValue' id = 'grossarea'text='1,146 呎'></Label>								
+							</View>
+						</View>						
+					</View>
+					<View class='bottomLine'/>
+				</View>
+				
+				
+				
+				<View class='leftItemView' id='otherMainView'>
+					<View class='otherItemView'>
+						<Label class='otherItemLabel' id='othersLabel'>
+							其他資料
+						</Label>
+						<View class='otherItemValueView'>
+							<View class='otherItemHorView'>
+								<Label class='otherItemValueLabel' id=''>入伙年份：</Label>
+								<Label class='otherItemValue' id=''>1967年</Label>
+							</View>
+							<View class='otherItemHorView'>
+								<Label class='otherItemValueLabel' id=''>管理費：</Label>
+								<Label class='otherItemValue' id=''>約2000（每月）</Label>
+							</View>
+							<View class='otherItemHorView'>
+								<Label class='otherItemValueLabel' id=''>間隔：</Label>
+								<Label class='otherItemValue' id=''>3房2廳</Label>	
+							</View>
+							<View class='otherItemHorView'>
+								<Label class='otherItemValueLabel' id=''>座向景觀：</Label>
+								<Label class='otherItemValue' id=''>向南,園景</Label>
+							</View>
+							<View class='otherItemHorView'>
+								<Label class='otherItemValueLabel' id=''>裝修：</Label>
+								<Label class='otherItemValue' id=''>原裝間隔,柚木地,冷</Label>
+							</View>
+							
+						</View>
+						
+					</View>
+					<View class='bottomLine'/>
+					
+				</View>
+				<View class='leftItemView' id='otherMainView'>
+					<View class='otherItemView'>
+							<Label class='otherItemLabel' id='otherItemRemarksLabel'>
+								備註
+							</Label>
+							<Label id='otherItemRemarks' >業主自讓:有蓋車位,全包,不售,清靜,獨立工人房.工作間</Label>
+						</View>
+					<View class='bottomLine'/>
+				</View>
+				
+				<View class='leftItemView'>
+					<View class='leftcontainView'>
+						<Button id="likeBtn"/>
+						<Button id="emailBtn"/>
+					</View>
+				</View> 
+			</ScrollView>
+		
+		
+			<View id='rightView'>
+				<View id='topView'>
+					<Label id='premises'>金鐘柯布連道89號力寶中心</Label>
+					<View class='leftcontainView'>
+						<Button id="hotBtn"/>
+					
+					</View>
+					
+				</View>
+				<View id='bottomView'>
+					<ScrollView id='middleSrlView'>
+						<Label id='iconLabel'>設施／鄰近設施</Label>
+						<View id ='iconView'>
+							<View class='iconContainer'>
+								<ImageView class='icon' class='carPark'>
+									
+								</ImageView>
+							</View>
+							
+							<View class='iconContainer'>
+								<ImageView class='icon' class='swimming'>
+									
+								</ImageView>
+							</View>	
+							<View class='iconContainer'> 
+								<ImageView class='icon' class='taxi'>
+									
+								</ImageView>
+							</View>	
+							<View class='iconContainer'>
+								<ImageView class='icon' class='train'>
+									
+								</ImageView>
+							</View>	
+							<View class='iconContainer'>
+								<ImageView class='icon' class='bicycle'>
+									
+								</ImageView>
+							</View>
+							<View class='iconContainer'>
+								<ImageView class='icon' class='carPark'>
+									
+								</ImageView>
+							</View>
+							
+							<View class='iconContainer'>
+								<ImageView class='icon' class='swimming'>
+									
+								</ImageView>
+							</View>	
+							<View class='iconContainer'>
+								<ImageView class='icon' class='taxi'>
+									
+								</ImageView>
+							</View>	
+							<View class='iconContainer'>
+								<ImageView class='icon' class='train'>
+									
+								</ImageView>
+							</View>	
+							<View class='iconContainer'>
+								<ImageView class='icon' class='bicycle'>
+									
+								</ImageView>
+							</View>	
+																		
+						</View>
+					</ScrollView>
+					<ScrollView id='smallImgSrlView'>
+						<View id='rightSubView'>
+						</View>
+					</ScrollView>
+				</View>	
+			</View>
+		</View>
+
+</Alloy>

@@ -1,0 +1,41 @@
+  <Alloy>
+	<View id='rePropMainLayoutView'>
+		<View id='rePropImgParaView'>
+			<View id='rePropImgHold'>
+				<ImageView id='rePropImgArrow' />
+			</View>
+			<View id='rePropSearchView'>
+				<View id='rePropSearchTitleView'>
+					<Label id = 'rePropSearchTitle'>排序</Label>
+				</View>
+				<View class='rePropParaView'>
+					<Label class='rePropLabel' >地址</Label>
+					<Label id ='addrValue' class='rePropValue' value='asc'>遞增</Label>
+					<ImageView id='addrSelImg' class='selImage' chSource='addrValue'></ImageView>
+				</View>
+				<View class='rePropParaView'>
+					<Label class='rePropLabel' >售價</Label>
+					<Label id ='priceValue' class='rePropValue' value='asc'>遞增</Label>
+					<ImageView id='priceSelImg' class='selImage' chSource='priceValue'></ImageView>
+				</View>
+				<View class='rePropParaView'>
+					<Label class='rePropLabel' >租金</Label>
+					<Label id ='rentValue' class='rePropValue' value='asc'>遞增</Label>
+					<ImageView id='rentSelImg' class='selImage' chSource='rentValue'></ImageView>
+				</View>
+				<View class='rePropParaView'>
+					<Label class='rePropLabel' >實用面積</Label>
+					<Label id ='nareaValue' class='rePropValue' value='asc'>遞增</Label>
+					<ImageView id='nareaSelImg' class='selImage' chSource='nareaValue'></ImageView>
+				</View>
+				<View class='rePropParaView'>
+					<Button id="submitBtn"  />
+				</View>
+			</View>
+		</View>
+		
+	
+		<TableView id='rePropTmpl1Table' >
+		</TableView>
+	</View>
+</Alloy>

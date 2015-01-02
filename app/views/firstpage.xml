@@ -1,0 +1,12 @@
+<Alloy>
+	<View  id='firstPageRootView'>
+		<View height='50%' width='100%' id='aboutUsView' layout='vertical'borderWidth=1 borderColor='black'>
+			<Label id='aboutUsLabelTitle'  ></Label>	
+			<Label id='aboutUsLabelContent' ></Label>	
+		</View>
+		<View height=50% width=100% id='firstHonView' >
+			
+				
+		</View>
+	</View>	
+</Alloy>

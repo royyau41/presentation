@@ -1,0 +1,53 @@
+"#docTableRow":{
+	height:Ti.UI.SIZE,
+	className: 'myrows'
+}
+,"#docTmpl1RowView":{
+	backgroundImage : "/recommend/propBg.png",
+	//backgroundColor:'white',
+	//layout:'horizontal',
+	left:20,
+	right:20,
+	borderRadius:5,
+	width:Ti.UI.FILL,
+	top:10,
+	height:Ti.UI.SIZE
+}
+,"#docTmpl1MainDetailView":{
+	layout:'vertical',
+	left:'10',
+	top:10,
+
+	width:Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+}
+,"#docTmpl1SubDetailView":{
+	layout:'horizontal',
+	top:0,
+	horizontalWrap:true,
+	width:'90%',
+	height:250
+}
+,"#docListDocument":{
+	bubbleParent:false,
+	top:10,
+	width:'80%',
+	height:0,
+	
+	borderRadius:5,
+	backgroundGradient:{
+	        type: 'linear',
+	        colors: [ { color: '#EEEEEE', offset: 0}, { color: '#EEEEEE', offset: 0.45 }  , { color: '#EEEEEE', offset: 1 }],
+	  },
+	showVerticalScrollIndicator:false,
+	showHorizontalScrollIndicator:false,
+	layout:'horizontal'
+}
+,"#docTmpl1Title":{
+	left:20,
+	width:'auto',
+	height:Ti.UI.SIZE,
+	top:0,
+	font:{fontSize:20,fontWeight:'bold'},		
+	color:'#006865'
+}

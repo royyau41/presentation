@@ -1,0 +1,45 @@
+"#docMainLayoutView[platform=ios]":{
+	title:"推介樓盤", 
+	backgroundColor:'#E6E6E6',
+	//width:'100%',
+	height:Ti.UI.FILL,
+	top:10,
+	layout:'horizontal',
+	showVerticalScrollIndicator: false,
+ 	showHorizontalScrollIndicator: false,
+ 	width:'95%',
+	contentWidth: '95%',
+	contentHeight: 'auto',
+
+}
+,"#docMainLayoutView[platform=android]":{
+	title:"推介樓盤", 
+	backgroundColor:'#E6E6E6',
+	//width:'100%',
+	height:Ti.UI.FILL,
+	top:10,
+	layout:'horizontal',
+	showVerticalScrollIndicator: false,
+ 	showHorizontalScrollIndicator: false,
+ 	width:'95%',
+	contentWidth: '95%',
+	contentHeight: 'auto',
+
+}
+/*
+,"#docTable[platform=ios]":{
+	top:10,
+	backgroundColor:'#E6E6E6',
+	selectionStyle:Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
+	separatorColor:'transparent',
+	separatorstyle:Ti.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+,"#docTable[platform=android]":{
+	top:10,
+	backgroundColor:'#E6E6E6',
+	
+//	selectionStyle:Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
+	separatorColor:'transparent'
+	//separatorstyle:Ti.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+*/

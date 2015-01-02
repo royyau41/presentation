@@ -1,0 +1,15 @@
+<Alloy>
+		<ScrollView id='newdevDeatilTmpl1Main' layout='vertical'>
+					<View id="newdevDtlAddrView">
+						<Label id='newdevDtlAddr'></Label>
+					</View>
+					<ScrollView id='newdevDtlScrollImgView'  >
+						
+					</ScrollView>
+					
+					
+					
+					
+		</ScrollView>
+
+</Alloy>

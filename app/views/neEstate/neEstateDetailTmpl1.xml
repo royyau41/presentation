@@ -1,0 +1,17 @@
+<Alloy>
+		<ScrollView id='containView'>
+			<View id='neEstateDtlInfoView'>
+				<Label id='neEstateDtlAddr'>上環德輔道中262號一洲大廈</Label>
+				<View id='neEstateDtlItem'>
+				<!---Create in js controller for loop -->
+				</View>
+			</View>
+			<View id='neEstateDtlImage'>
+				<View id='neEstateDtlHoldSize'>
+					<ImageView id='neEstateDtlBigImg'/>
+				</View>
+				<ScrollView id='neEstateDtlScrSmlImg' /><!-- child create in controller-->
+			</View>
+		</ScrollView>
+
+</Alloy>

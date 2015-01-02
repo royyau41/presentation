@@ -1,0 +1,32 @@
+"#mainDetailView":{
+	backgroundColor:'#E5E5E5',
+	zIndex:10,
+	layout:'vertical',
+	height:Ti.UI.FILL
+	}
+	,"#neEstateDtlScrollView":{
+		showVerticalScrollIndicator:false,
+		showHorizontalScrollIndicator:false,
+		width:'100%',
+		contentWidth: 'auto',
+	  	contentHeight: 'auto',
+	  	//layout:'vertical'
+	}
+	,"#neEstateDtlBtnView":{
+		top:10,
+		height:'38dp'
+	}
+		,"#neEstateDtlPrev":{
+			backgroundImage:'/temp/prevBtn.png',
+			top:0,
+			right:130,
+			width:'87dp',
+			height:'38dp'
+		}
+		,"#neEstateDtlNext":{
+			backgroundImage:'/temp/nextBtn.png',
+			top:0,
+			right:30,
+			width:'87dp',
+			height:'38dp'
+		}

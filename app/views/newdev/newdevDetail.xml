@@ -1,0 +1,16 @@
+<Alloy>
+	<Window title="主頁">
+				<View id='mainDetailView'>
+					<ScrollableView id='newdevDtlScrollView' >
+						
+						
+					</ScrollableView>
+									
+					<!--<View id='newdevDtlBtnView'> 
+			
+						<Button id='newdevDtlPrev'></Button>
+						<Button id='newdevDtlNext'></Button>
+				</View>-->
+				</View>
+	</Window>
+</Alloy>

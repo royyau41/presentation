@@ -1,0 +1,47 @@
+<Alloy>
+	<ScrollView id='logMainView'>
+				<View class='logSubView'>
+					<Label class='logSubLabel'>語言：</Label>
+					<View class='logFieldView' id ='switchLang'/>
+				</View>
+				<View class='logSubView' >
+					<Label class='logSubLabel'>Host IP：</Label>
+					<TextField class='logSubField' id='IP' value='192.168.0.40:88' enabled=true/>
+				</View>
+				<View class='logSubView'>
+					<Label class='logSubLabel'>Login：</Label>
+					<TextField class='logSubField' id='USERCODE'/>
+				</View>
+				<View class='logSubView' >
+					<Label class='logSubLabel'>Password：</Label>
+					<TextField class='logSubField' id='USERPASSWORD' passwordMask=true />
+				</View>
+				<View class='logSubView' >
+					<Label class='logSubLabel'>System Number：</Label>
+					<TextField class='logSubField' id='sn' enabled=false/>
+					<Widget src="nl.fokkezb.button" title="下載資料" style="bs-success" id='dlData' />	
+					<Widget src="nl.fokkezb.button" title=" 測試用 " style="bs-success" id='dlEstate' />	
+				</View>
+				<View class='logSubView' >
+					<Label class='logSubLabel'>CurrentProperty Group：</Label>
+					<View class='logFieldView' id ='propGroupBtnView'/>
+				</View>
+				<View class='logSubView' >
+					<Label class='logSubLabel'>樓盤詳細頁面：</Label>
+					<View class='logFieldView' id ='switchPage'/>
+				</View>
+				<View class='logSubView'>
+					<Label class='logSubLabel'>目錄樣式：</Label>
+					<View class='logFieldView' id ='switchMenu'/>
+				</View>
+				
+				<View class='logSubView' >
+					<Label class='logSubLabel'>Sql：</Label>
+					<TextArea class='logSubField' id='sqlArea' height=70 editable=true/>
+					<Widget src="nl.fokkezb.button" title="Sql" style="bs-success" id='sqlBtn' />
+				</View>
+				<View class='logSubView' >
+					<Widget src="nl.fokkezb.button" title="Login" style="bs-success" id='loginBtn' />				
+				</View>
+	</ScrollView>
+</Alloy>

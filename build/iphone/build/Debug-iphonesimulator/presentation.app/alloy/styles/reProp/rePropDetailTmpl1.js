@@ -1,0 +1,1 @@
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation/Resources/iphone/alloy/styles/reProp/rePropDetailTmpl1.js

@@ -1,0 +1,7 @@
+<Alloy>
+	<View id='docTmpl2Wrap'  >
+			<View id='docTmpl2Image'></View>				
+			<Label id='docTmpl2Title' ></Label>
+			<View class='spaceHeight5' id='space' height='25dp' width='Ti.UI.FILL'  ></View>
+	</View>
+</Alloy>

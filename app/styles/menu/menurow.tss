@@ -1,0 +1,30 @@
+'#menuRow':{
+	className:'recipe-row'
+		//borderWidth:1,
+	//borderColor:'red',
+
+}
+,"#label":{
+	color:'blue'
+}
+,"#icon":{
+	left:'10dp',
+	top:'10dp',
+}
+,"#table[platform=ios]":{
+	width:116,
+	height:Ti.Platform.displayCaps.platformHeight,
+	borderWidth:1,
+	borderColor:'brown',
+	backgroundColor:'black',
+	selectBackgroundColor:'transparent',
+	separatorStyle:Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+	//separatorStyle:Titanium.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE
+}
+,"#table[platform=android]":{
+	width:116,
+	//height:Ti.Platform.displayCaps.platformHeight,
+	backgroundColor:'black',
+	selectBackgroundColor:'transparent'
+	//separatorStyle:Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}
