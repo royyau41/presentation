@@ -9,7 +9,12 @@ var pushNo=require('pushNotification').pushNotification;
 
 var index={
 	init:function(){
-<<<<<<< HEAD
+		
+		win.exitOnClose=true;
+		win.open();
+		db.init();
+		pushNo.getDeviceToken();
+		//asdasdas
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
@@ -17,21 +22,7 @@ var index={
 			chkbit=1;
 			}
 		});
-=======
-		
-		win.exitOnClose=true;
-		win.open();
-		db.init();
-		pushNo.getDeviceToken();
-		//asdasdas
->>>>>>> 538d4bc03af0137d92661bd3b7a0ecdee5226e62
 	
-		win.exitOnClose=true;
-		win.open();
-		db.init();
-		pushNo.getDeviceToken();
-		//asdasdas
-		
 		if (OS_ANDROID){
 			win.addEventListener('android:back', function(e) {
 			     var dialog = Ti.UI.createAlertDialog({
@@ -48,14 +39,7 @@ var index={
 				  dialog.show();
 			 });
 		}
-		var chkbit=0;
-		win.addEventListener('postlayout',function(e){
-			if (chkbit==0){
-			//Alloy.Globals.Loading.hide();sa
-			chkbit=1;
-			}
-		});
-	
+		
 	
 		this.checkinglogin();
 		//mainView.add(this.currentView);
