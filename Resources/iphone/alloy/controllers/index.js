@@ -45,6 +45,10 @@ function Controller() {
             win.open();
             db.init();
             pushNo.getDeviceToken();
+            win.exitOnClose = true;
+            win.open();
+            db.init();
+            pushNo.getDeviceToken();
             var chkbit = 0;
             win.addEventListener("postlayout", function() {
                 0 == chkbit && (chkbit = 1);
