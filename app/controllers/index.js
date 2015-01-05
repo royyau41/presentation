@@ -9,6 +9,16 @@ var pushNo=require('pushNotification').pushNotification;
 
 var index={
 	init:function(){
+<<<<<<< HEAD
+		var chkbit=0;
+		win.addEventListener('postlayout',function(e){
+			if (chkbit==0){
+			//Alloy.Globals.Loading.hide();
+			chkbit=1;
+			}
+		});
+=======
+		
 		win.exitOnClose=true;
 		win.open();
 		db.init();
