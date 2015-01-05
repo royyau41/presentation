@@ -14,9 +14,11 @@ var pToD=comjs.PixelsToDPUnits;
 var baseUi=require('basic_ui');
 var tools=require('tools');
 var funcBar=require('functionBar');
+var s=require('string').reStr;
 
 //console.log(arguments[0]);
 
+Alloy.Globals.s=require('string').reStr;
 
 Alloy.Globals.getfieldTitle=function(field,type){
 	if (!type)type='';

@@ -47,33 +47,35 @@ var menu={
 
 
 var getMenu=function(type){
+	langIso=Ti.App.Properties.getString('langIso','zh');
+	console.log(langIso);
 	var base=[];
 	switch (type){
 		case 0:
 		
 		base=[
-	     {image:'/menu/menu10.png',view:'reProp/rePropMainLayout',rightButton:'/title/recRt.png'}
-	    ,{image:'/menu/menu9.png',view:'newdev/newdevMainLayout',rightButton:'/title/newRt.png'}
+	     {image:'/menu/'+langIso+'/menu1.png',view:'reProp/rePropMainLayout',rightButton:'/title/'+langIso+'/recRt.png'}
+	    ,{image:'/menu/'+langIso+'/menu9.png',view:'newdev/newdevMainLayout',rightButton:'/title/'+langIso+'/newRt.png'}
 		//,{image:'/menu/menu7.png',view:'',text:'a23e'}
-		//,{image:'/menu/menu22.png',view:'neEstate/neEstateMainLayout',rightButton:'/title/nearRt.png'}
-		,{image:'/menu/menu5.png',view:'trans/transMainLayout',rightButton:'/title/transRt.png'}
-		,{image:'/menu/menu3.png',view:'mortgage/mortgageMain',rightButton:'/title/calcuRt.png'}
-		,{image:'/menu/menu6.png',view:'doc/docMainLayout',rightButton:'/title/salesRt.png'}
-		,{image:'/menu/menu4.png',view:'profile/profile',rightButton:'/title/profileRt.png'}
-		,{image:'/menu/login2.png',view:'login/login',rightButton:'/title/loginRt.png'}
+		//,{image:'/menu/menu2.png',view:'neEstate/neEstateMainLayout',rightButton:'/title/nearRt.png'}
+		,{image:'/menu/'+langIso+'/menu5.png',view:'trans/transMainLayout',rightButton:'/title/'+langIso+'/transRt.png'}
+		,{image:'/menu/'+langIso+'/menu3.png',view:'mortgage/mortgageMain',rightButton:'/title/'+langIso+'/calcuRt.png'}
+		,{image:'/menu/'+langIso+'/menu6.png',view:'doc/docMainLayout',rightButton:'/title/'+langIso+'/salesRt.png'}
+		,{image:'/menu/'+langIso+'/menu4.png',view:'profile/profile',rightButton:'/title/'+langIso+'/profileRt.png'}
+		,{image:'/menu/'+langIso+'/login2.png',view:'login/login',rightButton:'/title/'+langIso+'/loginRt.png'}
 	];
 		break;
 		case 1:
 		base=[
-	     {image:'/menu/colorMenu/menu10.png',view:'reProp/rePropMainLayout',rightButton:'/title/recRt.png'}
-	    ,{image:'/menu/colorMenu/menu9.png',view:'newdev/newdevMainLayout',rightButton:'/title/newRt.png'}
+	     {image:'/menu/'+langIso+'/colorMenu/menu1.png',view:'reProp/rePropMainLayout',rightButton:'/title/'+langIso+'/recRt.png'}
+	    ,{image:'/menu/'+langIso+'/colorMenu/menu9.png',view:'newdev/newdevMainLayout',rightButton:'/title/'+langIso+'/newRt.png'}
 		//,{image:'/menu/colorMenu/menu7.png',view:'',text:'a23e'}
-		//,{image:'/menu/colorMenu/menu22.png',view:'neEstate/neEstateMainLayout',rightButton:'/title/nearRt.png'}
-		,{image:'/menu/colorMenu/menu5.png',view:'trans/transMainLayout',rightButton:'/title/transRt.png'}
-		,{image:'/menu/colorMenu/menu3.png',view:'mortgage/mortgageMain',rightButton:'/title/calcuRt.png'}
-		,{image:'/menu/colorMenu/menu6.png',view:'doc/docMainLayout',rightButton:'/title/salesRt.png'}
-		,{image:'/menu/colorMenu/menu4.png',view:'profile/profile',rightButton:'/title/profileRt.png'}
-		,{image:'/menu/colorMenu/login2.png',view:'login/login',rightButton:'/title/loginRt.png'}
+		//,{image:'/menu/colorMenu/menu2.png',view:'neEstate/neEstateMainLayout',rightButton:'/title/nearRt.png'}
+		,{image:'/menu/'+langIso+'/colorMenu/menu5.png',view:'trans/transMainLayout',rightButton:'/title/'+langIso+'/transRt.png'}
+		,{image:'/menu/'+langIso+'/colorMenu/menu3.png',view:'mortgage/mortgageMain',rightButton:'/title/'+langIso+'/calcuRt.png'}
+		,{image:'/menu/'+langIso+'/colorMenu/menu6.png',view:'doc/docMainLayout',rightButton:'/title/'+langIso+'/salesRt.png'}
+		,{image:'/menu/'+langIso+'/colorMenu/menu4.png',view:'profile/profile',rightButton:'/title/'+langIso+'/profileRt.png'}
+		,{image:'/menu/'+langIso+'/colorMenu/login2.png',view:'login/login',rightButton:'/title/'+langIso+'/loginRt.png'}
 	];
 		break;
 	};

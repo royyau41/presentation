@@ -8,7 +8,8 @@ var deviceToken = null;
 var pushNo=require('pushNotification').pushNotification;
 
 var index={
-	init:function(){      
+	init:function(){   
+		console.log(s('addr'));
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
@@ -87,9 +88,10 @@ var index={
 			
 		}
 		else {
+			langIso=Ti.App.Properties.getString('langIso','zh');
 			 e={
 				showView:'reProp/rePropMainLayout',
-				rightButton:'/title/recRt.png',
+				rightButton:'/title/'+langIso+'/recRt.png',
 				win:win
 			};
 			

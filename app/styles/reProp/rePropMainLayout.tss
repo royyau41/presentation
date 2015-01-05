@@ -58,6 +58,7 @@
 			layout:'horizontal'
 		}
 		,".rePropLabel":{
+			
 			width:100
 		}
 		,".rePropValue":{

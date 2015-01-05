@@ -89,13 +89,13 @@ function Controller() {
         id: "__alloyId100"
     });
     $.__views.rePropSearchView.add($.__views.__alloyId100);
-    $.__views.__alloyId101 = Ti.UI.createLabel({
+    $.__views.rePropSearchAddr = Ti.UI.createLabel({
         color: "black",
         width: 100,
         text: "地址",
-        id: "__alloyId101"
+        id: "rePropSearchAddr"
     });
-    $.__views.__alloyId100.add($.__views.__alloyId101);
+    $.__views.__alloyId100.add($.__views.rePropSearchAddr);
     $.__views.addrValue = Ti.UI.createLabel({
         color: "#04B404",
         width: 50,
@@ -112,22 +112,22 @@ function Controller() {
         chSource: "addrValue"
     });
     $.__views.__alloyId100.add($.__views.addrSelImg);
-    $.__views.__alloyId102 = Ti.UI.createView({
+    $.__views.__alloyId101 = Ti.UI.createView({
         top: 10,
         left: 10,
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         layout: "horizontal",
-        id: "__alloyId102"
+        id: "__alloyId101"
     });
-    $.__views.rePropSearchView.add($.__views.__alloyId102);
-    $.__views.__alloyId103 = Ti.UI.createLabel({
+    $.__views.rePropSearchView.add($.__views.__alloyId101);
+    $.__views.__alloyId102 = Ti.UI.createLabel({
         color: "black",
         width: 100,
         text: "售價",
-        id: "__alloyId103"
+        id: "__alloyId102"
     });
-    $.__views.__alloyId102.add($.__views.__alloyId103);
+    $.__views.__alloyId101.add($.__views.__alloyId102);
     $.__views.priceValue = Ti.UI.createLabel({
         color: "#04B404",
         width: 50,
@@ -135,7 +135,7 @@ function Controller() {
         id: "priceValue",
         value: "asc"
     });
-    $.__views.__alloyId102.add($.__views.priceValue);
+    $.__views.__alloyId101.add($.__views.priceValue);
     $.__views.priceSelImg = Ti.UI.createImageView({
         width: 22,
         height: 22,
@@ -143,23 +143,23 @@ function Controller() {
         id: "priceSelImg",
         chSource: "priceValue"
     });
-    $.__views.__alloyId102.add($.__views.priceSelImg);
-    $.__views.__alloyId104 = Ti.UI.createView({
+    $.__views.__alloyId101.add($.__views.priceSelImg);
+    $.__views.__alloyId103 = Ti.UI.createView({
         top: 10,
         left: 10,
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         layout: "horizontal",
-        id: "__alloyId104"
+        id: "__alloyId103"
     });
-    $.__views.rePropSearchView.add($.__views.__alloyId104);
-    $.__views.__alloyId105 = Ti.UI.createLabel({
+    $.__views.rePropSearchView.add($.__views.__alloyId103);
+    $.__views.__alloyId104 = Ti.UI.createLabel({
         color: "black",
         width: 100,
         text: "租金",
-        id: "__alloyId105"
+        id: "__alloyId104"
     });
-    $.__views.__alloyId104.add($.__views.__alloyId105);
+    $.__views.__alloyId103.add($.__views.__alloyId104);
     $.__views.rentValue = Ti.UI.createLabel({
         color: "#04B404",
         width: 50,
@@ -167,7 +167,7 @@ function Controller() {
         id: "rentValue",
         value: "asc"
     });
-    $.__views.__alloyId104.add($.__views.rentValue);
+    $.__views.__alloyId103.add($.__views.rentValue);
     $.__views.rentSelImg = Ti.UI.createImageView({
         width: 22,
         height: 22,
@@ -175,23 +175,23 @@ function Controller() {
         id: "rentSelImg",
         chSource: "rentValue"
     });
-    $.__views.__alloyId104.add($.__views.rentSelImg);
-    $.__views.__alloyId106 = Ti.UI.createView({
+    $.__views.__alloyId103.add($.__views.rentSelImg);
+    $.__views.__alloyId105 = Ti.UI.createView({
         top: 10,
         left: 10,
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         layout: "horizontal",
-        id: "__alloyId106"
+        id: "__alloyId105"
     });
-    $.__views.rePropSearchView.add($.__views.__alloyId106);
-    $.__views.__alloyId107 = Ti.UI.createLabel({
+    $.__views.rePropSearchView.add($.__views.__alloyId105);
+    $.__views.__alloyId106 = Ti.UI.createLabel({
         color: "black",
         width: 100,
         text: "實用面積",
-        id: "__alloyId107"
+        id: "__alloyId106"
     });
-    $.__views.__alloyId106.add($.__views.__alloyId107);
+    $.__views.__alloyId105.add($.__views.__alloyId106);
     $.__views.nareaValue = Ti.UI.createLabel({
         color: "#04B404",
         width: 50,
@@ -199,7 +199,7 @@ function Controller() {
         id: "nareaValue",
         value: "asc"
     });
-    $.__views.__alloyId106.add($.__views.nareaValue);
+    $.__views.__alloyId105.add($.__views.nareaValue);
     $.__views.nareaSelImg = Ti.UI.createImageView({
         width: 22,
         height: 22,
@@ -207,16 +207,16 @@ function Controller() {
         id: "nareaSelImg",
         chSource: "nareaValue"
     });
-    $.__views.__alloyId106.add($.__views.nareaSelImg);
-    $.__views.__alloyId108 = Ti.UI.createView({
+    $.__views.__alloyId105.add($.__views.nareaSelImg);
+    $.__views.__alloyId107 = Ti.UI.createView({
         top: 10,
         left: 10,
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         layout: "horizontal",
-        id: "__alloyId108"
+        id: "__alloyId107"
     });
-    $.__views.rePropSearchView.add($.__views.__alloyId108);
+    $.__views.rePropSearchView.add($.__views.__alloyId107);
     $.__views.submitBtn = Ti.UI.createButton({
         title: "碓定",
         top: 0,
@@ -241,7 +241,7 @@ function Controller() {
         zIndex: 100,
         id: "submitBtn"
     });
-    $.__views.__alloyId108.add($.__views.submitBtn);
+    $.__views.__alloyId107.add($.__views.submitBtn);
     $.__views.rePropTmpl1Table = Ti.UI.createTableView({
         top: 10,
         backgroundColor: "#E6E6E6",
@@ -270,6 +270,7 @@ function Controller() {
         propertyList: [],
         init: function() {
             bottomBar.setCencelEvent(cancelSet);
+            this.setLangTitle();
             this.addEvent();
             propgroup || (propgroup = getPropGroup.getLastPropgroupNo());
             var property = getProp.getList(propgroup);
@@ -277,6 +278,9 @@ function Controller() {
             var btmView = bottomBar.getBtmView();
             $.rePropMainLayoutView.add(btmView);
             this.setSortSearchOption();
+        },
+        setLangTitle: function() {
+            $.rePropSearchAddr.text = s("addr");
         },
         showProp: function(record) {
             var row = [];

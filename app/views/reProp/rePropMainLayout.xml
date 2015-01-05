@@ -9,7 +9,7 @@
 					<Label id = 'rePropSearchTitle'>排序</Label>
 				</View>
 				<View class='rePropParaView'>
-					<Label class='rePropLabel' >地址</Label>
+					<Label id ='rePropSearchAddr'class='rePropLabel'>地址</Label>
 					<Label id ='addrValue' class='rePropValue' value='asc'>遞增</Label>
 					<ImageView id='addrSelImg' class='selImage' chSource='addrValue'></ImageView>
 				</View>

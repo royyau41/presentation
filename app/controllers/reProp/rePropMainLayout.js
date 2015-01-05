@@ -1,5 +1,4 @@
 loginInfo=Ti.App.Properties.getObject('loginInfo',false);
-
 var db=require('db').db;
 var getPropGroup=require('getData').propGroup;
 var getProp=require('getData').property;
@@ -19,13 +18,12 @@ var reProp={
 	propertyList:[],
 	init:function(){
 		bottomBar.setCencelEvent(cancelSet);
-		
+		this.setLangTitle();
 		this.addEvent();
-//		database.init();
+
 		if(!propgroup)propgroup=getPropGroup.getLastPropgroupNo();
 			var property=getProp.getList(propgroup);
 		if (property){
-			//console.log(property);
 			this.showProp(property);
 		}
 			
@@ -34,6 +32,9 @@ var reProp={
 		$.rePropMainLayoutView.add(btmView);
 		this.setSortSearchOption();
 
+	}
+	,setLangTitle:function(){
+		$.rePropSearchAddr.text=s('addr');
 	}
 	,showProp:function(record){
 		
