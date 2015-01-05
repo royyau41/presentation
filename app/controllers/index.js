@@ -15,6 +15,13 @@ var index={
 		db.init();
 		pushNo.getDeviceToken();
 		//asdasdas
+		var chkbit=0;
+		win.addEventListener('postlayout',function(e){
+			if (chkbit==0){
+			//Alloy.Globals.Loading.hide();sa
+			chkbit=1;
+			}
+		});
 	
 		if (OS_ANDROID){
 			win.addEventListener('android:back', function(e) {
@@ -32,13 +39,7 @@ var index={
 				  dialog.show();
 			 });
 		}
-		var chkbit=0;
-		win.addEventListener('postlayout',function(e){
-			if (chkbit==0){
-			//Alloy.Globals.Loading.hide();sa
-			chkbit=1;
-			}
-		});
+		
 	
 	
 		this.checkinglogin();
