@@ -3,7 +3,7 @@
 	"deployType": "development",
 	"iosSdkVersion": "8.1",
 	"deviceFamily": "universal",
-	"iosSdkPath": "/Users/ast/Library/Application Support/Titanium/mobilesdk/osx/3.4.1.GA/iphone",
+	"iosSdkPath": "/Users/Roy/Library/Application Support/Titanium/mobilesdk/osx/3.4.1.GA/iphone",
 	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
 	"modulesHash": "9fbc32decd1c49c74840214eab104330",
 	"modulesNativeHash": "7155cfb02b611d42e1565667d59c1e76",

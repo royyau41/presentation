@@ -1,5 +1,5 @@
 TI_VERSION=3.4.1
-TI_SDK_DIR=/Users/ast/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION).GA/iphone
+TI_SDK_DIR=/Users/Roy/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION).GA/iphone
 TI_APPID=com.astbsl.presentation
 OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
 OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) -weak_framework iAd

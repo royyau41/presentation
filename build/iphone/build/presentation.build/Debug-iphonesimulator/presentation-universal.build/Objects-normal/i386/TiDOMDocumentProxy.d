@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMDocumentProxy.m \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMDocumentProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiBase.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiThreading.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiPublicAPI.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiEvaluator.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/KrollContext.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/headers/TiCore/TiCore.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMDocumentProxy.m \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMDocumentProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiBase.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiThreading.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiPublicAPI.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiEvaluator.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/KrollContext.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/headers/TiCore/TiCore.h \
   headers/TiCore/Ti.h headers/TiCore/TiBase.h \
   headers/TiCore/TiContextRef.h headers/TiCore/TiObjectRef.h \
   headers/TiCore/TiValueRef.h headers/TiCore/WebKitAvailability.h \
   headers/TiCore/TiStringRef.h headers/TiCore/TiStringRefCF.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/headers/TiCore/TiContextRefPrivate.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/KrollCallback.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/KrollObject.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/GDataXMLNode.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/headers/TiCore/TiContextRefPrivate.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/KrollCallback.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/KrollObject.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/GDataXMLNode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk/usr/include/libxml2/libxml/xmlexports.h \
@@ -40,24 +40,24 @@ dependencies: \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk/usr/include/libxml2/libxml/SAX2.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk/usr/include/libxml2/libxml/xpath.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk/usr/include/libxml2/libxml/xpathInternals.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMNodeProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMNodeListProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMTextNodeProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TIDOMCharacterDataProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMElementProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMAttrProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMCDATANodeProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMCommentProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMPIProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMDocFragProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TIDOMDOMImplementationProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TIDOMDocumentTypeProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMEntityRefProxy.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiUtils.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDimension.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiColor.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/WebFont.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiFile.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiBuffer.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiBlob.h \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/TiDOMValidator.h
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMNodeProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMNodeListProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMTextNodeProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TIDOMCharacterDataProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMElementProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMAttrProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMCDATANodeProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMCommentProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMPIProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMDocFragProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TIDOMDOMImplementationProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TIDOMDocumentTypeProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMEntityRefProxy.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiUtils.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDimension.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiColor.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/WebFont.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiFile.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiBuffer.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiBlob.h \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/TiDOMValidator.h

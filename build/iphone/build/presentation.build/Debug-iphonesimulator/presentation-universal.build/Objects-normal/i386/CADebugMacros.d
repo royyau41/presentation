@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/CADebugMacros.cpp \
-  /Users/ast/Documents/Titanium_Studio_Workspace/presentation/build/iphone/Classes/CADebugMacros.h
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/CADebugMacros.cpp \
+  /Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/build/iphone/Classes/CADebugMacros.h
