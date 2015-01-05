@@ -16,7 +16,6 @@ var index={
 			chkbit=1;
 			}
 		});
-
 		win.exitOnClose=true;
 		win.open();
 		db.init();
