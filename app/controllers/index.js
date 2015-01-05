@@ -9,7 +9,6 @@ var pushNo=require('pushNotification').pushNotification;
 
 var index={
 	init:function(){
-<<<<<<< HEAD
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
@@ -17,15 +16,7 @@ var index={
 			chkbit=1;
 			}
 		});
-=======
-		
-		win.exitOnClose=true;
-		win.open();
-		db.init();
-		pushNo.getDeviceToken();
-		//asdasdas
 
-	
 		win.exitOnClose=true;
 		win.open();
 		db.init();
@@ -48,13 +39,7 @@ var index={
 				  dialog.show();
 			 });
 		}
-		var chkbit=0;
-		win.addEventListener('postlayout',function(e){
-			if (chkbit==0){
-			//Alloy.Globals.Loading.hide();sa
-			chkbit=1;
-			}
-		});
+		
 	
 	
 		this.checkinglogin();
