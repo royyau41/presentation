@@ -15,6 +15,8 @@ var index={
 		db.init();
 		pushNo.getDeviceToken();
 		//asdasdas
+		
+		//asdasdasdasds
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
