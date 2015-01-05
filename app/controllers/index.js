@@ -8,7 +8,7 @@ var deviceToken = null;
 var pushNo=require('pushNotification').pushNotification;
 
 var index={
-	init:function(){   
+	init:function(){      
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
