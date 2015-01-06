@@ -80,6 +80,38 @@ function Controller() {
         id: "rePropSearchTitle"
     });
     $.__views.rePropSearchTitleView.add($.__views.rePropSearchTitle);
+    $.__views.__alloyId99 = Ti.UI.createView({
+        top: 10,
+        left: 10,
+        width: Ti.UI.SIZE,
+        height: Ti.UI.SIZE,
+        layout: "horizontal",
+        id: "__alloyId99"
+    });
+    $.__views.rePropSearchView.add($.__views.__alloyId99);
+    $.__views.rePropSearchAddr = Ti.UI.createLabel({
+        color: "black",
+        width: 100,
+        text: "地址",
+        id: "rePropSearchAddr"
+    });
+    $.__views.__alloyId99.add($.__views.rePropSearchAddr);
+    $.__views.addrValue = Ti.UI.createLabel({
+        color: "#04B404",
+        width: 50,
+        text: "遞增",
+        id: "addrValue",
+        value: "asc"
+    });
+    $.__views.__alloyId99.add($.__views.addrValue);
+    $.__views.addrSelImg = Ti.UI.createImageView({
+        width: 22,
+        height: 22,
+        image: "/reProp/downArrow.png",
+        id: "addrSelImg",
+        chSource: "addrValue"
+    });
+    $.__views.__alloyId99.add($.__views.addrSelImg);
     $.__views.__alloyId100 = Ti.UI.createView({
         top: 10,
         left: 10,
@@ -89,29 +121,29 @@ function Controller() {
         id: "__alloyId100"
     });
     $.__views.rePropSearchView.add($.__views.__alloyId100);
-    $.__views.rePropSearchAddr = Ti.UI.createLabel({
+    $.__views.rePropSearchPrice = Ti.UI.createLabel({
         color: "black",
         width: 100,
-        text: "地址",
-        id: "rePropSearchAddr"
+        text: "售價",
+        id: "rePropSearchPrice"
     });
-    $.__views.__alloyId100.add($.__views.rePropSearchAddr);
-    $.__views.addrValue = Ti.UI.createLabel({
+    $.__views.__alloyId100.add($.__views.rePropSearchPrice);
+    $.__views.priceValue = Ti.UI.createLabel({
         color: "#04B404",
         width: 50,
         text: "遞增",
-        id: "addrValue",
+        id: "priceValue",
         value: "asc"
     });
-    $.__views.__alloyId100.add($.__views.addrValue);
-    $.__views.addrSelImg = Ti.UI.createImageView({
+    $.__views.__alloyId100.add($.__views.priceValue);
+    $.__views.priceSelImg = Ti.UI.createImageView({
         width: 22,
         height: 22,
         image: "/reProp/downArrow.png",
-        id: "addrSelImg",
-        chSource: "addrValue"
+        id: "priceSelImg",
+        chSource: "priceValue"
     });
-    $.__views.__alloyId100.add($.__views.addrSelImg);
+    $.__views.__alloyId100.add($.__views.priceSelImg);
     $.__views.__alloyId101 = Ti.UI.createView({
         top: 10,
         left: 10,
@@ -121,29 +153,29 @@ function Controller() {
         id: "__alloyId101"
     });
     $.__views.rePropSearchView.add($.__views.__alloyId101);
-    $.__views.rePropSearchPrice = Ti.UI.createLabel({
+    $.__views.rePropSearchRent = Ti.UI.createLabel({
         color: "black",
         width: 100,
-        text: "售價",
-        id: "rePropSearchPrice"
+        text: "租金",
+        id: "rePropSearchRent"
     });
-    $.__views.__alloyId101.add($.__views.rePropSearchPrice);
-    $.__views.priceValue = Ti.UI.createLabel({
+    $.__views.__alloyId101.add($.__views.rePropSearchRent);
+    $.__views.rentValue = Ti.UI.createLabel({
         color: "#04B404",
         width: 50,
         text: "遞增",
-        id: "priceValue",
+        id: "rentValue",
         value: "asc"
     });
-    $.__views.__alloyId101.add($.__views.priceValue);
-    $.__views.priceSelImg = Ti.UI.createImageView({
+    $.__views.__alloyId101.add($.__views.rentValue);
+    $.__views.rentSelImg = Ti.UI.createImageView({
         width: 22,
         height: 22,
         image: "/reProp/downArrow.png",
-        id: "priceSelImg",
-        chSource: "priceValue"
+        id: "rentSelImg",
+        chSource: "rentValue"
     });
-    $.__views.__alloyId101.add($.__views.priceSelImg);
+    $.__views.__alloyId101.add($.__views.rentSelImg);
     $.__views.__alloyId102 = Ti.UI.createView({
         top: 10,
         left: 10,
@@ -153,29 +185,29 @@ function Controller() {
         id: "__alloyId102"
     });
     $.__views.rePropSearchView.add($.__views.__alloyId102);
-    $.__views.rePropSearchRent = Ti.UI.createLabel({
+    $.__views.rePropSearchNarea = Ti.UI.createLabel({
         color: "black",
         width: 100,
-        text: "租金",
-        id: "rePropSearchRent"
+        text: "實用面積",
+        id: "rePropSearchNarea"
     });
-    $.__views.__alloyId102.add($.__views.rePropSearchRent);
-    $.__views.rentValue = Ti.UI.createLabel({
+    $.__views.__alloyId102.add($.__views.rePropSearchNarea);
+    $.__views.nareaValue = Ti.UI.createLabel({
         color: "#04B404",
         width: 50,
         text: "遞增",
-        id: "rentValue",
+        id: "nareaValue",
         value: "asc"
     });
-    $.__views.__alloyId102.add($.__views.rentValue);
-    $.__views.rentSelImg = Ti.UI.createImageView({
+    $.__views.__alloyId102.add($.__views.nareaValue);
+    $.__views.nareaSelImg = Ti.UI.createImageView({
         width: 22,
         height: 22,
         image: "/reProp/downArrow.png",
-        id: "rentSelImg",
-        chSource: "rentValue"
+        id: "nareaSelImg",
+        chSource: "nareaValue"
     });
-    $.__views.__alloyId102.add($.__views.rentSelImg);
+    $.__views.__alloyId102.add($.__views.nareaSelImg);
     $.__views.__alloyId103 = Ti.UI.createView({
         top: 10,
         left: 10,
@@ -185,38 +217,6 @@ function Controller() {
         id: "__alloyId103"
     });
     $.__views.rePropSearchView.add($.__views.__alloyId103);
-    $.__views.rePropSearchNarea = Ti.UI.createLabel({
-        color: "black",
-        width: 100,
-        text: "實用面積",
-        id: "rePropSearchNarea"
-    });
-    $.__views.__alloyId103.add($.__views.rePropSearchNarea);
-    $.__views.nareaValue = Ti.UI.createLabel({
-        color: "#04B404",
-        width: 50,
-        text: "遞增",
-        id: "nareaValue",
-        value: "asc"
-    });
-    $.__views.__alloyId103.add($.__views.nareaValue);
-    $.__views.nareaSelImg = Ti.UI.createImageView({
-        width: 22,
-        height: 22,
-        image: "/reProp/downArrow.png",
-        id: "nareaSelImg",
-        chSource: "nareaValue"
-    });
-    $.__views.__alloyId103.add($.__views.nareaSelImg);
-    $.__views.__alloyId104 = Ti.UI.createView({
-        top: 10,
-        left: 10,
-        width: Ti.UI.SIZE,
-        height: Ti.UI.SIZE,
-        layout: "horizontal",
-        id: "__alloyId104"
-    });
-    $.__views.rePropSearchView.add($.__views.__alloyId104);
     $.__views.submitBtn = Ti.UI.createButton({
         title: "碓定",
         top: 0,
@@ -241,7 +241,7 @@ function Controller() {
         zIndex: 100,
         id: "submitBtn"
     });
-    $.__views.__alloyId104.add($.__views.submitBtn);
+    $.__views.__alloyId103.add($.__views.submitBtn);
     $.__views.rePropTmpl1Table = Ti.UI.createTableView({
         id: "rePropTmpl1Table"
     });
