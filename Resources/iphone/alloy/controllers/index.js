@@ -41,7 +41,6 @@ function Controller() {
     var pushNo = require("pushNotification").pushNotification;
     var index = {
         init: function() {
-            console.log(s("addr"));
             var chkbit = 0;
             win.addEventListener("postlayout", function() {
                 0 == chkbit && (chkbit = 1);

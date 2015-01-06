@@ -111,7 +111,6 @@ function Controller() {
     exports.destroy = function() {};
     _.extend($, $.__views);
     var args = arguments[0] || {};
-    var comjs = require("common");
     var duration = 500;
     var hasSlided = false;
     var direction = "reset";

@@ -35,6 +35,9 @@ var reProp={
 	}
 	,setLangTitle:function(){
 		$.rePropSearchAddr.text=s('addr');
+		$.rePropSearchPrice.text=s('price');
+		$.rePropSearchRent.text=s('rent');
+		$.rePropSearchNarea.text=s('narea');
 	}
 	,showProp:function(record){
 		
@@ -172,7 +175,7 @@ var reProp={
 var orderDialog=function(e){
 	var opts = {
 			  cancel: 2,
-			  options: ['遞增', '遞減', '取消'],
+			  options: [s('orderAsc'), s('orderDesc'), '取消'],
 			  selectedIndex: 2,
 			};
 	var text='';
@@ -182,11 +185,11 @@ var orderDialog=function(e){
 	dialog.addEventListener('click', function(e1){
 		switch(e1.index){
 			case 0:
-				text='遞增';
+				text=s('orderAsc');
 				value='asc';
 			break;
 			case 1:
-				text='遞減';
+				text=s('orderDesc');
 				value='desc';
 			break;
 			default:
