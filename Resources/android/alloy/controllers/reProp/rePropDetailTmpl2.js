@@ -75,20 +75,41 @@ function Controller() {
         id: "__alloyId42"
     });
     $.__views.priceView.add($.__views.__alloyId42);
-    $.__views.priceLabel = Ti.UI.createLabel({
-        color: "white",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 15,
-        width: 30,
-        height: 70,
-        id: "priceLabel",
-        text: "售價"
-    });
+    $.__views.priceLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 15,
+            width: 30,
+            height: 70,
+            color: "white"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 10,
+            width: 45,
+            height: 30,
+            color: "white"
+        });
+        _.extend(o, {
+            id: "priceLabel",
+            text: "售價"
+        });
+        return o;
+    }());
     $.__views.__alloyId42.add($.__views.priceLabel);
     $.__views.__alloyId43 = Ti.UI.createView({
         width: Ti.UI.FILL,
@@ -174,21 +195,42 @@ function Controller() {
         id: "__alloyId46"
     });
     $.__views.rentView.add($.__views.__alloyId46);
-    $.__views.priceLabel = Ti.UI.createLabel({
-        color: "white",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 15,
-        width: 30,
-        height: 70,
-        id: "priceLabel",
-        text: "租金"
-    });
-    $.__views.__alloyId46.add($.__views.priceLabel);
+    $.__views.rentLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 15,
+            width: 30,
+            height: 70,
+            color: "white"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 10,
+            width: 45,
+            height: 30,
+            color: "white"
+        });
+        _.extend(o, {
+            id: "rentLabel",
+            text: "租金"
+        });
+        return o;
+    }());
+    $.__views.__alloyId46.add($.__views.rentLabel);
     $.__views.__alloyId47 = Ti.UI.createView({
         width: Ti.UI.FILL,
         left: 50,
@@ -257,20 +299,41 @@ function Controller() {
         id: "__alloyId52"
     });
     $.__views.__alloyId51.add($.__views.__alloyId52);
-    $.__views.areaLabel = Ti.UI.createLabel({
-        color: "white",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 15,
-        width: 30,
-        height: 70,
-        id: "areaLabel",
-        text: "面積"
-    });
+    $.__views.areaLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 15,
+            width: 30,
+            height: 70,
+            color: "white"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 10,
+            width: 45,
+            height: 30,
+            color: "white"
+        });
+        _.extend(o, {
+            id: "areaLabel",
+            text: "面積"
+        });
+        return o;
+    }());
     $.__views.__alloyId52.add($.__views.areaLabel);
     $.__views.__alloyId53 = Ti.UI.createView({
         width: Ti.UI.FILL,
@@ -286,7 +349,7 @@ function Controller() {
         id: "__alloyId54"
     });
     $.__views.__alloyId53.add($.__views.__alloyId54);
-    $.__views.netareaUnit = Ti.UI.createLabel({
+    $.__views.netUnit = Ti.UI.createLabel({
         color: "black",
         left: "0",
         height: Ti.UI.SIZE,
@@ -295,10 +358,10 @@ function Controller() {
             fontSize: 20,
             fontWeight: "bold"
         },
-        id: "netareaUnit",
+        id: "netUnit",
         text: "實用 :"
     });
-    $.__views.__alloyId54.add($.__views.netareaUnit);
+    $.__views.__alloyId54.add($.__views.netUnit);
     $.__views.netarea = Ti.UI.createLabel({
         color: "black",
         id: "netarea",
@@ -311,7 +374,7 @@ function Controller() {
         id: "__alloyId55"
     });
     $.__views.__alloyId53.add($.__views.__alloyId55);
-    $.__views.netareaUnit = Ti.UI.createLabel({
+    $.__views.grossUnit = Ti.UI.createLabel({
         color: "black",
         left: "0",
         height: Ti.UI.SIZE,
@@ -320,10 +383,10 @@ function Controller() {
             fontSize: 20,
             fontWeight: "bold"
         },
-        id: "netareaUnit",
+        id: "grossUnit",
         text: "建築 :"
     });
-    $.__views.__alloyId55.add($.__views.netareaUnit);
+    $.__views.__alloyId55.add($.__views.grossUnit);
     $.__views.grossarea = Ti.UI.createLabel({
         color: "black",
         id: "grossarea",
@@ -355,30 +418,65 @@ function Controller() {
         id: "__alloyId57"
     });
     $.__views.otherMainView.add($.__views.__alloyId57);
-    $.__views.othersLabel = Ti.UI.createLabel({
-        color: "black",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 5,
-        top: 5,
-        bottom: 5,
-        width: 30,
-        height: Ti.UI.SIZE,
-        text: "其他資料",
-        id: "othersLabel"
-    });
+    $.__views.othersLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 5,
+            top: 5,
+            bottom: 5,
+            width: 30,
+            height: Ti.UI.SIZE,
+            color: "black"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 13,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 0,
+            top: 5,
+            bottom: 5,
+            width: 55,
+            height: Ti.UI.SIZE,
+            color: "black"
+        });
+        _.extend(o, {
+            text: "其他資料",
+            id: "othersLabel"
+        });
+        return o;
+    }());
     $.__views.__alloyId57.add($.__views.othersLabel);
-    $.__views.__alloyId58 = Ti.UI.createView({
-        left: 40,
-        top: 0,
-        height: Ti.UI.SIZE,
-        layout: "vertical",
-        id: "__alloyId58"
-    });
+    $.__views.__alloyId58 = Ti.UI.createView(function() {
+        var o = {};
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            left: 40,
+            top: 0,
+            height: Ti.UI.SIZE,
+            layout: "vertical"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            left: 50,
+            top: 0,
+            height: Ti.UI.SIZE,
+            layout: "vertical"
+        });
+        _.extend(o, {
+            id: "__alloyId58"
+        });
+        return o;
+    }());
     $.__views.__alloyId57.add($.__views.__alloyId58);
     $.__views.__alloyId59 = Ti.UI.createView({
         top: 5,
@@ -570,35 +668,76 @@ function Controller() {
         id: "__alloyId75"
     });
     $.__views.otherMainView.add($.__views.__alloyId75);
-    $.__views.otherItemRemarksLabel = Ti.UI.createLabel({
-        color: "black",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 5,
-        top: 15,
-        bottom: 5,
-        width: 30,
-        height: Ti.UI.SIZE,
-        text: "備註",
-        id: "otherItemRemarksLabel"
-    });
+    $.__views.otherItemRemarksLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 5,
+            top: 5,
+            bottom: 5,
+            width: 30,
+            height: Ti.UI.SIZE,
+            color: "black"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 13,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 0,
+            top: 5,
+            bottom: 5,
+            width: 55,
+            height: Ti.UI.SIZE,
+            color: "black"
+        });
+        _.extend(o, {
+            top: 15,
+            text: "備註",
+            id: "otherItemRemarksLabel"
+        });
+        return o;
+    }());
     $.__views.__alloyId75.add($.__views.otherItemRemarksLabel);
-    $.__views.otherItemRemarks = Ti.UI.createLabel({
-        color: "black",
-        left: 50,
-        width: Ti.UI.FILL,
-        top: 15,
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
-        font: {
-            fontSize: 16
-        },
-        text: "業主自讓:有蓋車位,全包,不售,清靜,獨立工人房.工作間",
-        id: "otherItemRemarks"
-    });
+    $.__views.otherItemRemarks = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            left: 50,
+            width: Ti.UI.FILL,
+            top: 15,
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+            font: {
+                fontSize: 16
+            }
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            left: 55,
+            width: Ti.UI.FILL,
+            top: 15,
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+            font: {
+                fontSize: 16
+            }
+        });
+        _.extend(o, {
+            text: "業主自讓:有蓋車位,全包,不售,清靜,獨立工人房.工作間",
+            id: "otherItemRemarks"
+        });
+        return o;
+    }());
     $.__views.__alloyId75.add($.__views.otherItemRemarks);
     $.__views.__alloyId76 = Ti.UI.createView({
         bottom: 0,
@@ -658,6 +797,7 @@ function Controller() {
     $.__views.premises = Ti.UI.createLabel({
         color: "#006865",
         left: 0,
+        right: "70",
         textAlign: "left",
         font: {
             fontSize: 24,
@@ -919,6 +1059,7 @@ function Controller() {
     var rePropDetailTmpl2 = {
         check: 0,
         init: function() {
+            this.setLangTitle();
             this.setDetail();
             $.smallImgSrlView.addEventListener("postlayout", function() {
                 if (0 == rePropDetailTmpl2.check) {
@@ -934,6 +1075,16 @@ function Controller() {
             img.left = "80%";
             $.priceItemView.add(img);
         },
+        setLangTitle: function() {
+            $.leftTitle.setText(s("forPrice"));
+            $.priceLabel.setText(s("Price"));
+            $.rentLabel.setText(s("Rent"));
+            $.areaLabel.setText(s("Area"));
+            $.netUnit.setText(s("netUnit"));
+            $.grossUnit.setText(s("grossUnit"));
+            $.othersLabel.setText(s("others"));
+            $.otherItemRemarksLabel.setText(s("remarks"));
+        },
         setDetail: function() {
             propdetail = getProp.getDetail(args.propertyno, args.propgroup);
             $.premises.text = propdetail[lang + "_premises"];
@@ -944,10 +1095,14 @@ function Controller() {
             $.netarea.text = comjs.addCommas(propdetail["netarea"]) + "呎";
             $.grossarea.text = comjs.addCommas(propdetail["grossarea"]) + "呎";
             $.otherItemRemarks.text = propdetail[lang + "_remarks"];
-            (0 == propdetail["rent"] || "" == propdetail["rent"]) && $.leftSrlView.remove($.rentView);
+            if (0 == propdetail["rent"] || "" == propdetail["rent"]) {
+                $.leftSrlView.remove($.rentView);
+                console.log(s("forPrice"));
+                $.leftTitle.setText(s("forPrice"));
+            }
             if (0 == propdetail["price"] || "" == propdetail["price"]) {
                 $.leftSrlView.remove($.priceView);
-                $.leftTitle.setText("出租");
+                $.leftTitle.setText(s("forRent"));
             }
         },
         setMap: function(addr) {

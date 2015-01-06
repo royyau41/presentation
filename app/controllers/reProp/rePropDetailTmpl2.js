@@ -61,7 +61,7 @@ var rePropDetailTmpl2={
 		$.netarea.text=comjs.addCommas(propdetail['netarea'])+'呎';
 		$.grossarea.text=comjs.addCommas(propdetail['grossarea'])+'呎';
 		$.otherItemRemarks.text=propdetail[lang+'_remarks'];
-		
+		$.remarkContainView.height=70;
 		// 沒有租價
 		if (propdetail['rent']==0 ||propdetail['rent']==''){
 			$.leftSrlView.remove($.rentView);

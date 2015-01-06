@@ -118,7 +118,7 @@ Alloy.Globals.checkLang=function(lang){
 	return (Ti.App.Properties.getString('lang','c')==lang);
 };
 
-
+Alloy.Globals.rotateLeft90 = Ti.UI.create2DMatrix().rotate(270);
 
 
 

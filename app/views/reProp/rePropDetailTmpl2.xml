@@ -86,7 +86,7 @@
 					
 				</View>
 				<View class='leftItemView' id='otherMainView'>
-					<View class='otherItemView'>
+					<View class='otherItemView' id='remarkContainView'>
 							<Label class='otherItemLabel' id='otherItemRemarksLabel'>
 								備註
 							</Label>

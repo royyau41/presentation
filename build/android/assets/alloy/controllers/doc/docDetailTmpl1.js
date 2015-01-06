@@ -1,0 +1,1 @@
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/android/alloy/controllers/doc/docDetailTmpl1.js

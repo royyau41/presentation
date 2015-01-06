@@ -10,6 +10,10 @@ var tools = require("tools");
 
 var funcBar = require("functionBar");
 
+var s = require("string").reStr;
+
+Alloy.Globals.s = require("string").reStr;
+
 Alloy.Globals.getfieldTitle = function(field, type) {
     type || (type = "");
     var obj = {};

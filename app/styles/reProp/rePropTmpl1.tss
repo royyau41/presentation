@@ -34,9 +34,16 @@
 	//borderColor:'blue',
 	//borderWidth:1
 }
-,"#rePropTmpl1SubDetailView":{
+,"#rePropTmpl1SubDetailView[if=Alloy.Globals.checkLang('c')]":{
 	layout:'horizontal',
 	top:20,
+	horizontalWrap:true,
+	width:'90%',
+	height:Ti.UI.SIZE
+}
+,"#rePropTmpl1SubDetailView[if=Alloy.Globals.checkLang('e')]":{
+	layout:'horizontal',
+	top:35,
 	horizontalWrap:true,
 	width:'90%',
 	height:Ti.UI.SIZE

@@ -75,6 +75,7 @@
 					backgroundColor:'#74DF00',
 					font:{fontSize:17,fontWeight:'bold'},
 					textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,	
+					transform: Alloy.Globals.rotateLeft90,
 					left:10,
 					width:45,
 					height:30,
@@ -183,21 +184,24 @@
 				
 				
 /*-----------------------------------------------------*/				
-			,".otherItemView":{
+			,".otherItemView[if=Alloy.Globals.checkLang('c')]":{
 				top:0,
 				left:10,
 				width:Ti.UI.FILL,
 				height:Ti.UI.SIZE,
-				//borderWidth:1,
-				//borderRadius:3,
-				//borderColor:'#CACACA'
+			}
+			,".otherItemView[if=Alloy.Globals.checkLang('e')]":{
+				top:0,
+				left:0,
+				width:Ti.UI.FILL,
+				height:Ti.UI.SIZE,
 			}
 			,".otherItemLabel[if=Alloy.Globals.checkLang('c')]":{
 				backgroundColor:'#74DF00',
 				font:{fontSize:17,fontWeight:'bold'},
 				textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,	
 				left:5,
-				top:5,
+				top:10,
 				bottom:5,
 				width:30,
 				height:Ti.UI.SIZE,
@@ -206,18 +210,20 @@
 			}
 			,".otherItemLabel[if=Alloy.Globals.checkLang('e')]":{
 				backgroundColor:'#74DF00',
-				font:{fontSize:13,fontWeight:'bold'},
+				font:{fontSize:15,fontWeight:'bold'},
 				textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,	
 				left:0,
-				top:5,
-				bottom:5,
-				width:55,
-				height:Ti.UI.SIZE,
+				top:30,
+				bottom:0,
+				width:65,
+				height:30,
+				transform: Alloy.Globals.rotateLeft90,
 				color:'black'
 			}
 			,".otherItemValueView[if=Alloy.Globals.checkLang('c')]":{
 				left:40,
 				top:0,
+				bottom:0,
 				//width:30,
 				height:Ti.UI.SIZE,
 				layout:'vertical'
@@ -225,6 +231,7 @@
 			,".otherItemValueView[if=Alloy.Globals.checkLang('e')]":{
 				left:50,
 				top:0,
+				bottom:0,
 				//width:30,
 				height:Ti.UI.SIZE,
 				layout:'vertical'

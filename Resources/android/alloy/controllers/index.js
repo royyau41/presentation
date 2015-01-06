@@ -41,14 +41,14 @@ function Controller() {
     var pushNo = require("pushNotification").pushNotification;
     var index = {
         init: function() {
-            win.exitOnClose = true;
-            win.open();
-            db.init();
-            pushNo.getDeviceToken();
             var chkbit = 0;
             win.addEventListener("postlayout", function() {
                 0 == chkbit && (chkbit = 1);
             });
+            win.exitOnClose = true;
+            win.open();
+            db.init();
+            pushNo.getDeviceToken();
             win.addEventListener("android:back", function() {
                 var dialog = Ti.UI.createAlertDialog({
                     cancel: 0,
@@ -86,9 +86,10 @@ function Controller() {
                 });
                 dialog.show();
             } else {
+                langIso = Ti.App.Properties.getString("langIso", "zh");
                 e = {
                     showView: "reProp/rePropMainLayout",
-                    rightButton: "/title/recRt.png",
+                    rightButton: "/title/" + langIso + "/recRt.png",
                     win: win
                 };
                 evtData.e = e;

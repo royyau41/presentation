@@ -211,11 +211,11 @@ function Controller() {
         top: "5"
     });
     $.__views.tranResHeader.add($.__views.source);
-    var __alloyId106 = [];
-    $.__views.__alloyId107 = Ti.UI.createTableViewRow({
-        id: "__alloyId107"
+    var __alloyId105 = [];
+    $.__views.__alloyId106 = Ti.UI.createTableViewRow({
+        id: "__alloyId106"
     });
-    __alloyId106.push($.__views.__alloyId107);
+    __alloyId105.push($.__views.__alloyId106);
     $.__views.transItem = Ti.UI.createView({
         layout: "horizontal",
         height: 45,
@@ -223,27 +223,35 @@ function Controller() {
         backgroundSelectedColor: "#f4f4f4",
         id: "transItem"
     });
-    $.__views.__alloyId107.add($.__views.transItem);
-    $.__views.__alloyId108 = Ti.UI.createLabel({
+    $.__views.__alloyId106.add($.__views.transItem);
+    $.__views.__alloyId107 = Ti.UI.createLabel({
         color: "black",
         text: "單位",
-        id: "__alloyId108",
+        id: "__alloyId107",
         width: "110",
         left: "15",
+        top: "10"
+    });
+    $.__views.transItem.add($.__views.__alloyId107);
+    $.__views.__alloyId108 = Ti.UI.createLabel({
+        color: "black",
+        text: "高",
+        id: "__alloyId108",
+        width: "60",
         top: "10"
     });
     $.__views.transItem.add($.__views.__alloyId108);
     $.__views.__alloyId109 = Ti.UI.createLabel({
         color: "black",
-        text: "高",
+        text: "6000",
         id: "__alloyId109",
-        width: "60",
+        width: "65",
         top: "10"
     });
     $.__views.transItem.add($.__views.__alloyId109);
     $.__views.__alloyId110 = Ti.UI.createLabel({
         color: "black",
-        text: "6000",
+        text: "5000",
         id: "__alloyId110",
         width: "65",
         top: "10"
@@ -251,17 +259,17 @@ function Controller() {
     $.__views.transItem.add($.__views.__alloyId110);
     $.__views.__alloyId111 = Ti.UI.createLabel({
         color: "black",
-        text: "5000",
+        text: "10,252,123",
         id: "__alloyId111",
-        width: "65",
+        width: "120",
         top: "10"
     });
     $.__views.transItem.add($.__views.__alloyId111);
     $.__views.__alloyId112 = Ti.UI.createLabel({
         color: "black",
-        text: "10,252,123",
+        text: "1000",
         id: "__alloyId112",
-        width: "120",
+        width: "65",
         top: "10"
     });
     $.__views.transItem.add($.__views.__alloyId112);
@@ -275,36 +283,28 @@ function Controller() {
     $.__views.transItem.add($.__views.__alloyId113);
     $.__views.__alloyId114 = Ti.UI.createLabel({
         color: "black",
-        text: "1000",
+        text: "2014/03/02",
         id: "__alloyId114",
-        width: "65",
+        width: "100",
         top: "10"
     });
     $.__views.transItem.add($.__views.__alloyId114);
     $.__views.__alloyId115 = Ti.UI.createLabel({
         color: "black",
-        text: "2014/03/02",
+        text: "工業",
         id: "__alloyId115",
-        width: "100",
+        width: "65",
         top: "10"
     });
     $.__views.transItem.add($.__views.__alloyId115);
     $.__views.__alloyId116 = Ti.UI.createLabel({
         color: "black",
-        text: "工業",
-        id: "__alloyId116",
-        width: "65",
-        top: "10"
-    });
-    $.__views.transItem.add($.__views.__alloyId116);
-    $.__views.__alloyId117 = Ti.UI.createLabel({
-        color: "black",
         text: "田土廳",
-        id: "__alloyId117",
+        id: "__alloyId116",
         width: "80",
         top: "10"
     });
-    $.__views.transItem.add($.__views.__alloyId117);
+    $.__views.transItem.add($.__views.__alloyId116);
     $.__views.tranReslist = Ti.UI.createTableView({
         top: 0,
         width: "100%",
@@ -312,7 +312,7 @@ function Controller() {
         borderColor: Alloy.Globals.showdowColor,
         zIndex: 1,
         borderRadius: 5,
-        data: __alloyId106,
+        data: __alloyId105,
         headerView: $.__views.tranResHeader,
         id: "tranReslist"
     });
