@@ -7,6 +7,8 @@ var buttonPressed = false;
 var hasSlided = false;
 var direction = "reset";
 
+
+
 var title={
 	init:function(){
 		this.setEvent();

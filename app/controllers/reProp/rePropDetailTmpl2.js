@@ -28,7 +28,7 @@ var rePropDetailTmpl2={
 		
 		/**********     ADD CAL     ***********************/
 		var img=tools.mortagageTool(obj);
-		img.left='80%';
+		//img.left='80%';
 		$.priceItemView.add(img);
 		
 
@@ -43,6 +43,8 @@ var rePropDetailTmpl2={
 		$.grossUnit.setText(s('grossUnit'));
 		$.othersLabel.setText(s('others'));
 		$.otherItemRemarksLabel.setText(s('remarks'));
+		
+		$.hotBtn.backgroundImage="/temp/"+Alloy.Globals.langIso+"/hot.png";
 		
 
 	}

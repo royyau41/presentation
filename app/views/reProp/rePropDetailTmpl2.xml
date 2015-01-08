@@ -6,10 +6,10 @@
 						<View class='leftcontainView' >
 							<Label class='leftItemLabel' id='priceLabel' text='售價'></Label>
 							<View class='leftItemValueView'>
-								<View class='leftItemHorView' id='priceItemView'>
+								<View class='leftItemHorView'>
 									<Label class='' id = 'price' text='1,630'></Label>
 									<Label class='Unit' id = 'priceUnit' text='萬元'></Label>
-									
+									<Button id="hotBtn"/>
 								</View>
 								<View class='leftItemHorView'>
 									<Label class='leftItemValueLabel' class="blue" id='avgprice'>@ 111</Label>
@@ -97,7 +97,8 @@
 				
 				<View class='leftItemView'>
 					<View class='leftcontainView'>
-						<Button id="likeBtn"/>
+						
+						<Button id='priceItemView'/>
 						<Button id="emailBtn"/>
 					</View>
 				</View> 
@@ -108,7 +109,7 @@
 				<View id='topView'>
 					<Label id='premises'>金鐘柯布連道89號力寶中心</Label>
 					<View class='leftcontainView'>
-						<Button id="hotBtn"/>
+						<Button id="likeBtn"/>
 					
 					</View>
 					
