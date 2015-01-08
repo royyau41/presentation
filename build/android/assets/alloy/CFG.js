@@ -1,1 +1,1 @@
-module.exports={dependencies:{"nl.fokkezb.button":"1.4"},theme:"noActionBar"};
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/android/alloy/CFG.js

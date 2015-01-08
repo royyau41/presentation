@@ -12,9 +12,13 @@ $.reTableRow.propertyid=args.id;
 if (args.attachment){
 $.rePropTmpl1Image.image=Ti.Utils.base64decode(args.attachment);
 }
-
+//init 
 $.rePropTmpl1Addr.text = args[ Ti.App.Properties.getString('lang','c')+'_premises'] || '';
 $.rePropTmpl1Order.text=args.order;
+$.rePropTmpl1BestSale.backgroundImage="/temp/"+Alloy.Globals.langIso+"/hot.png";
+
+
+
 if (Ti.App.deployType=='development'||Ti.App.deployType=='test'){
 							
 							comjs.changeColor($.rePropTmpl1Addr,win);

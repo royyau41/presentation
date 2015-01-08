@@ -1,1 +1,1 @@
-exports.mortagageTool=function(e){var t=new baseUi(!0),i=t.getMortagageView();e.win&&e.win.add(i);var r=Ti.UI.createImageView({width:27,height:40,backgroundImage:"/temp/calculator1.png"});return r.addEventListener("click",function(){Ti.UI.createAnimation({left:10,duration:200});for(var e=i.left;0>=e;e+=1)i.left=e}),r};
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/android/tools.js

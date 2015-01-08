@@ -14,9 +14,11 @@ var pToD=comjs.PixelsToDPUnits;
 var baseUi=require('basic_ui');
 var tools=require('tools');
 var funcBar=require('functionBar');
+var s=require('string').reStr;
 
 //console.log(arguments[0]);
 
+Alloy.Globals.s=require('string').reStr;
 
 Alloy.Globals.getfieldTitle=function(field,type){
 	if (!type)type='';
@@ -69,6 +71,8 @@ Alloy.Globals.getfieldTitle=function(field,type){
 	return obj[ Ti.App.Properties.getString('lang','c') +type];
 };
 
+
+Alloy.Globals.langIso = Ti.App.Properties.getString('langIso','c');
 Alloy.Globals.lang = Ti.App.Properties.getString('lang','c');
 Alloy.Globals.showdowColor='#bbb';
 Alloy.Globals.titleHeight='';//storage the title height after title bar is created
@@ -116,7 +120,7 @@ Alloy.Globals.checkLang=function(lang){
 	return (Ti.App.Properties.getString('lang','c')==lang);
 };
 
-
+Alloy.Globals.rotateLeft90 = Ti.UI.create2DMatrix().rotate(270);
 
 
 

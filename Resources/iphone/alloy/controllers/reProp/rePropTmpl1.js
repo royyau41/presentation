@@ -74,7 +74,6 @@ function Controller() {
     });
     $.__views.rePropTmpl1RowView.add($.__views.rePropTmpl1MainDetailView);
     $.__views.rePropTmpl1BestSale = Ti.UI.createView({
-        backgroundImage: "/temp/hot.png",
         width: "52dp",
         height: "37dp",
         top: 0,
@@ -117,14 +116,27 @@ function Controller() {
         return o;
     }());
     $.__views.rePropTmpl1MainDetailView.add($.__views.rePropTmpl1Addr);
-    $.__views.rePropTmpl1SubDetailView = Ti.UI.createView({
-        layout: "horizontal",
-        top: 20,
-        horizontalWrap: true,
-        width: "90%",
-        height: Ti.UI.SIZE,
-        id: "rePropTmpl1SubDetailView"
-    });
+    $.__views.rePropTmpl1SubDetailView = Ti.UI.createView(function() {
+        var o = {};
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            layout: "horizontal",
+            top: 20,
+            horizontalWrap: true,
+            width: "90%",
+            height: Ti.UI.SIZE
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            layout: "horizontal",
+            top: 35,
+            horizontalWrap: true,
+            width: "90%",
+            height: Ti.UI.SIZE
+        });
+        _.extend(o, {
+            id: "rePropTmpl1SubDetailView"
+        });
+        return o;
+    }());
     $.__views.rePropTmpl1MainDetailView.add($.__views.rePropTmpl1SubDetailView);
     $.__views.rePropTmpl1Order = Ti.UI.createLabel({
         color: "#555",
@@ -146,6 +158,7 @@ function Controller() {
     args.attachment && ($.rePropTmpl1Image.image = Ti.Utils.base64decode(args.attachment));
     $.rePropTmpl1Addr.text = args[Ti.App.Properties.getString("lang", "c") + "_premises"] || "";
     $.rePropTmpl1Order.text = args.order;
+    $.rePropTmpl1BestSale.backgroundImage = "/temp/" + Alloy.Globals.langIso + "/hot.png";
     ("development" == Ti.App.deployType || "test" == Ti.App.deployType) && comjs.changeColor($.rePropTmpl1Addr, win);
     $.reTableRow.addEventListener("click", function() {
         getProp.updateRead(" id=" + args.id);

@@ -10,7 +10,9 @@ var lang=Ti.App.Properties.getString('lang','c');
 var rePropDetailTmpl2={
 	check:0,
 	init:function(){
+		this.setLangTitle();
 		this.setDetail();
+		
 		//rePropDetailTmpl2.setMap();
 		$.smallImgSrlView.addEventListener('postlayout',function(){
 			if (rePropDetailTmpl2.check==0){
@@ -32,6 +34,18 @@ var rePropDetailTmpl2={
 
 		
 	}
+	,setLangTitle:function(){
+		$.leftTitle.setText(s('forPrice'));
+		$.priceLabel.setText(s('Price'));
+		$.rentLabel.setText(s('Rent'));
+		$.areaLabel.setText(s('Area'));
+		$.netUnit.setText(s('netUnit'));
+		$.grossUnit.setText(s('grossUnit'));
+		$.othersLabel.setText(s('others'));
+		$.otherItemRemarksLabel.setText(s('remarks'));
+		
+
+	}
 	,setDetail:function(){
 		
 		 propdetail=getProp.getDetail(args.propertyno,args.propgroup);
@@ -47,14 +61,17 @@ var rePropDetailTmpl2={
 		$.netarea.text=comjs.addCommas(propdetail['netarea'])+'呎';
 		$.grossarea.text=comjs.addCommas(propdetail['grossarea'])+'呎';
 		$.otherItemRemarks.text=propdetail[lang+'_remarks'];
+		$.remarkContainView.height=70;
 		// 沒有租價
 		if (propdetail['rent']==0 ||propdetail['rent']==''){
 			$.leftSrlView.remove($.rentView);
+			console.log(s('forPrice'));
+			$.leftTitle.setText(s('forPrice'));
 		}
 		// 沒有售價轉出租
 		if (propdetail['price']==0 ||propdetail['price']==''){
 			$.leftSrlView.remove($.priceView);
-			$.leftTitle.setText('出租');
+			$.leftTitle.setText(s('forRent'));
 		}
 		
 		

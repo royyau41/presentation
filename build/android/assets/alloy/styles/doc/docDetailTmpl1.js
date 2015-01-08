@@ -1,1 +1,1 @@
-module.exports=[];
+/Users/Roy/Documents/Titanium_Studio_Workspace/presentation1/Resources/android/alloy/styles/doc/docDetailTmpl1.js

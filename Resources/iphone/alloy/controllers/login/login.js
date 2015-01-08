@@ -354,6 +354,7 @@ function Controller() {
     var win = args.win;
     var base_ui = new baseUi(true, false);
     var progress = base_ui.getProgressBar();
+    var menuStyle = Ti.App.Properties.getInt("menuStyle", 0);
     win.add(progress);
     progress.hide();
     Alloy.Globals.Loading = progress;
@@ -434,12 +435,14 @@ function Controller() {
         },
         setLang: function() {
             var langAry = [ "c", "e" ];
+            var langIsoAry = [ "zh", "en" ];
             var langTitleAry = [ "中文", "Eng" ];
             var switchAry = [];
             for (var i = 0; 2 > i; i++) {
                 switchAry[i] = Ti.UI.createButton({
                     title: langTitleAry[i],
                     lang: langAry[i],
+                    langIso: langIsoAry[i],
                     width: Ti.UI.SIZE,
                     top: 0,
                     left: "10dp",
@@ -457,7 +460,13 @@ function Controller() {
                     for (var k = 0; k < switchAry.length; k++) switchAry[k].setBackgroundGradient(Alloy.Globals.btnInitColor);
                     e.source.setBackgroundGradient(Alloy.Globals.btnSelectedColor);
                     Ti.App.Properties.setString("lang", e.source.lang);
-                    console.log(e.source.lang);
+                    Ti.App.Properties.setString("langIso", e.source.langIso);
+                    Alloy.Globals.langIso = e.source.langIso;
+                    Alloy.Globals.lang = e.source.lang;
+                    var data = {
+                        menu: menuStyle
+                    };
+                    Ti.App.fireEvent("MenuStyle", data);
                 });
             }
             if (Ti.App.Properties.getString("lang", "c")) for (var i = 0; i < switchAry.length; i++) switchAry[i].lang == Ti.App.Properties.getString("lang", "c") && switchAry[i].setBackgroundGradient(Alloy.Globals.btnSelectedColor);
@@ -484,6 +493,7 @@ function Controller() {
                     for (var k = 0; k < switchAry.length; k++) switchAry[k].setBackgroundGradient(Alloy.Globals.btnInitColor);
                     e.source.setBackgroundGradient(Alloy.Globals.btnSelectedColor);
                     Ti.App.Properties.setInt("menuStyle", e.source.menuStyle);
+                    menuStyle = e.source.menuStyle;
                     var data = {
                         menu: e.source.menuStyle
                     };

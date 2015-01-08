@@ -74,9 +74,10 @@ function Controller() {
                 });
                 dialog.show();
             } else {
+                langIso = Ti.App.Properties.getString("langIso", "zh");
                 e = {
                     showView: "reProp/rePropMainLayout",
-                    rightButton: "/title/recRt.png",
+                    rightButton: "/title/" + langIso + "/recRt.png",
                     win: win
                 };
                 evtData.e = e;

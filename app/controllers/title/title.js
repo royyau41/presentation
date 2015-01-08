@@ -1,8 +1,4 @@
 var args = arguments[0] || {};
-var comjs=require('common');
-
-
-
 var duration=(OS_IOS)?500:200;
 
 
@@ -36,10 +32,7 @@ var title={
 		$.rightButton.addEventListener('click',function(e){
 			$.leftButton.fireEvent('click');
 		});
-		$.leftButton.addEventListener('click',function(e){
-			
-		
-			
+		$.leftButton.addEventListener('click',function(e){	
 			$.menuList.setHeight(pToD(Ti.Platform.displayCaps.platformHeight-$.navview.toImage().height));
 			$.menu.table.setHeight(pToD(Ti.Platform.displayCaps.platformHeight-$.navview.toImage().height));
 			

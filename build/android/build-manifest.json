@@ -18,7 +18,7 @@
 	"copyright": "2014 by roy",
 	"guid": "430ba189-d5ef-4f0b-9a85-80fa76f4dbaf",
 	"icon": "icon144_namebtm.png",
-	"skipJSMinification": false,
+	"skipJSMinification": true,
 	"mergeCustomAndroidManifest": false,
 	"encryptJS": true,
 	"minSDK": 14,

@@ -10,6 +10,10 @@ var tools = require("tools");
 
 var funcBar = require("functionBar");
 
+var s = require("string").reStr;
+
+Alloy.Globals.s = require("string").reStr;
+
 Alloy.Globals.getfieldTitle = function(field, type) {
     type || (type = "");
     var obj = {};
@@ -200,6 +204,8 @@ Alloy.Globals.rightButton = "/title/recRt.png";
 Alloy.Globals.checkLang = function(lang) {
     return Ti.App.Properties.getString("lang", "c") == lang;
 };
+
+Alloy.Globals.rotateLeft90 = Ti.UI.create2DMatrix().rotate(270);
 
 Alloy.Globals.garea = {
     c: "建築面積:",

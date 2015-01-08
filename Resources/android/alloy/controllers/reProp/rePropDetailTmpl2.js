@@ -75,20 +75,42 @@ function Controller() {
         id: "__alloyId42"
     });
     $.__views.priceView.add($.__views.__alloyId42);
-    $.__views.priceLabel = Ti.UI.createLabel({
-        color: "white",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 15,
-        width: 30,
-        height: 70,
-        id: "priceLabel",
-        text: "售價"
-    });
+    $.__views.priceLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 15,
+            width: 30,
+            height: 70,
+            color: "white"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            transform: Alloy.Globals.rotateLeft90,
+            left: 10,
+            width: 45,
+            height: 30,
+            color: "white"
+        });
+        _.extend(o, {
+            id: "priceLabel",
+            text: "售價"
+        });
+        return o;
+    }());
     $.__views.__alloyId42.add($.__views.priceLabel);
     $.__views.__alloyId43 = Ti.UI.createView({
         width: Ti.UI.FILL,
@@ -174,21 +196,43 @@ function Controller() {
         id: "__alloyId46"
     });
     $.__views.rentView.add($.__views.__alloyId46);
-    $.__views.priceLabel = Ti.UI.createLabel({
-        color: "white",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 15,
-        width: 30,
-        height: 70,
-        id: "priceLabel",
-        text: "租金"
-    });
-    $.__views.__alloyId46.add($.__views.priceLabel);
+    $.__views.rentLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 15,
+            width: 30,
+            height: 70,
+            color: "white"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            transform: Alloy.Globals.rotateLeft90,
+            left: 10,
+            width: 45,
+            height: 30,
+            color: "white"
+        });
+        _.extend(o, {
+            id: "rentLabel",
+            text: "租金"
+        });
+        return o;
+    }());
+    $.__views.__alloyId46.add($.__views.rentLabel);
     $.__views.__alloyId47 = Ti.UI.createView({
         width: Ti.UI.FILL,
         left: 50,
@@ -257,20 +301,42 @@ function Controller() {
         id: "__alloyId52"
     });
     $.__views.__alloyId51.add($.__views.__alloyId52);
-    $.__views.areaLabel = Ti.UI.createLabel({
-        color: "white",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 15,
-        width: 30,
-        height: 70,
-        id: "areaLabel",
-        text: "面積"
-    });
+    $.__views.areaLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 15,
+            width: 30,
+            height: 70,
+            color: "white"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            transform: Alloy.Globals.rotateLeft90,
+            left: 10,
+            width: 45,
+            height: 30,
+            color: "white"
+        });
+        _.extend(o, {
+            id: "areaLabel",
+            text: "面積"
+        });
+        return o;
+    }());
     $.__views.__alloyId52.add($.__views.areaLabel);
     $.__views.__alloyId53 = Ti.UI.createView({
         width: Ti.UI.FILL,
@@ -286,7 +352,7 @@ function Controller() {
         id: "__alloyId54"
     });
     $.__views.__alloyId53.add($.__views.__alloyId54);
-    $.__views.netareaUnit = Ti.UI.createLabel({
+    $.__views.netUnit = Ti.UI.createLabel({
         color: "black",
         left: "0",
         height: Ti.UI.SIZE,
@@ -295,10 +361,10 @@ function Controller() {
             fontSize: 20,
             fontWeight: "bold"
         },
-        id: "netareaUnit",
+        id: "netUnit",
         text: "實用 :"
     });
-    $.__views.__alloyId54.add($.__views.netareaUnit);
+    $.__views.__alloyId54.add($.__views.netUnit);
     $.__views.netarea = Ti.UI.createLabel({
         color: "black",
         id: "netarea",
@@ -311,7 +377,7 @@ function Controller() {
         id: "__alloyId55"
     });
     $.__views.__alloyId53.add($.__views.__alloyId55);
-    $.__views.netareaUnit = Ti.UI.createLabel({
+    $.__views.grossUnit = Ti.UI.createLabel({
         color: "black",
         left: "0",
         height: Ti.UI.SIZE,
@@ -320,10 +386,10 @@ function Controller() {
             fontSize: 20,
             fontWeight: "bold"
         },
-        id: "netareaUnit",
+        id: "grossUnit",
         text: "建築 :"
     });
-    $.__views.__alloyId55.add($.__views.netareaUnit);
+    $.__views.__alloyId55.add($.__views.grossUnit);
     $.__views.grossarea = Ti.UI.createLabel({
         color: "black",
         id: "grossarea",
@@ -347,38 +413,88 @@ function Controller() {
         id: "otherMainView"
     });
     $.__views.leftSrlView.add($.__views.otherMainView);
-    $.__views.__alloyId57 = Ti.UI.createView({
-        top: 0,
-        left: 10,
-        width: Ti.UI.FILL,
-        height: Ti.UI.SIZE,
-        id: "__alloyId57"
-    });
+    $.__views.__alloyId57 = Ti.UI.createView(function() {
+        var o = {};
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            top: 0,
+            left: 10,
+            width: Ti.UI.FILL,
+            height: Ti.UI.SIZE
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            top: 0,
+            left: 0,
+            width: Ti.UI.FILL,
+            height: Ti.UI.SIZE
+        });
+        _.extend(o, {
+            id: "__alloyId57"
+        });
+        return o;
+    }());
     $.__views.otherMainView.add($.__views.__alloyId57);
-    $.__views.othersLabel = Ti.UI.createLabel({
-        color: "black",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 5,
-        top: 5,
-        bottom: 5,
-        width: 30,
-        height: Ti.UI.SIZE,
-        text: "其他資料",
-        id: "othersLabel"
-    });
+    $.__views.othersLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 5,
+            top: 10,
+            bottom: 5,
+            width: 30,
+            height: Ti.UI.SIZE,
+            color: "black"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 15,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 0,
+            top: 30,
+            bottom: 0,
+            width: 65,
+            height: 30,
+            transform: Alloy.Globals.rotateLeft90,
+            color: "black"
+        });
+        _.extend(o, {
+            text: "其他資料",
+            id: "othersLabel"
+        });
+        return o;
+    }());
     $.__views.__alloyId57.add($.__views.othersLabel);
-    $.__views.__alloyId58 = Ti.UI.createView({
-        left: 40,
-        top: 0,
-        height: Ti.UI.SIZE,
-        layout: "vertical",
-        id: "__alloyId58"
-    });
+    $.__views.__alloyId58 = Ti.UI.createView(function() {
+        var o = {};
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            left: 40,
+            top: 0,
+            bottom: 0,
+            height: Ti.UI.SIZE,
+            layout: "vertical"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            left: 50,
+            top: 0,
+            bottom: 0,
+            height: Ti.UI.SIZE,
+            layout: "vertical"
+        });
+        _.extend(o, {
+            id: "__alloyId58"
+        });
+        return o;
+    }());
     $.__views.__alloyId57.add($.__views.__alloyId58);
     $.__views.__alloyId59 = Ti.UI.createView({
         top: 5,
@@ -562,67 +678,121 @@ function Controller() {
         id: "otherMainView"
     });
     $.__views.leftSrlView.add($.__views.otherMainView);
+    $.__views.remarkContainView = Ti.UI.createView(function() {
+        var o = {};
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            top: 0,
+            left: 10,
+            width: Ti.UI.FILL,
+            height: Ti.UI.SIZE
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            top: 0,
+            left: 0,
+            width: Ti.UI.FILL,
+            height: Ti.UI.SIZE
+        });
+        _.extend(o, {
+            id: "remarkContainView"
+        });
+        return o;
+    }());
+    $.__views.otherMainView.add($.__views.remarkContainView);
+    $.__views.otherItemRemarksLabel = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 17,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 5,
+            top: 10,
+            bottom: 5,
+            width: 30,
+            height: Ti.UI.SIZE,
+            color: "black"
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            backgroundColor: "#74DF00",
+            font: {
+                fontSize: 15,
+                fontWeight: "bold"
+            },
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+            left: 0,
+            top: 30,
+            bottom: 0,
+            width: 65,
+            height: 30,
+            transform: Alloy.Globals.rotateLeft90,
+            color: "black"
+        });
+        _.extend(o, {
+            top: 15,
+            text: "備註",
+            id: "otherItemRemarksLabel"
+        });
+        return o;
+    }());
+    $.__views.remarkContainView.add($.__views.otherItemRemarksLabel);
+    $.__views.otherItemRemarks = Ti.UI.createLabel(function() {
+        var o = {};
+        _.extend(o, {
+            color: "black"
+        });
+        Alloy.Globals.checkLang("c") && _.extend(o, {
+            left: 50,
+            width: Ti.UI.FILL,
+            top: 15,
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+            font: {
+                fontSize: 16
+            }
+        });
+        Alloy.Globals.checkLang("e") && _.extend(o, {
+            left: 55,
+            width: Ti.UI.FILL,
+            top: 15,
+            textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+            font: {
+                fontSize: 16
+            }
+        });
+        _.extend(o, {
+            text: "業主自讓:有蓋車位,全包,不售,清靜,獨立工人房.工作間",
+            id: "otherItemRemarks"
+        });
+        return o;
+    }());
+    $.__views.remarkContainView.add($.__views.otherItemRemarks);
     $.__views.__alloyId75 = Ti.UI.createView({
-        top: 0,
-        left: 10,
-        width: Ti.UI.FILL,
-        height: Ti.UI.SIZE,
-        id: "__alloyId75"
-    });
-    $.__views.otherMainView.add($.__views.__alloyId75);
-    $.__views.otherItemRemarksLabel = Ti.UI.createLabel({
-        color: "black",
-        backgroundColor: "#74DF00",
-        font: {
-            fontSize: 17,
-            fontWeight: "bold"
-        },
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-        left: 5,
-        top: 15,
-        bottom: 5,
-        width: 30,
-        height: Ti.UI.SIZE,
-        text: "備註",
-        id: "otherItemRemarksLabel"
-    });
-    $.__views.__alloyId75.add($.__views.otherItemRemarksLabel);
-    $.__views.otherItemRemarks = Ti.UI.createLabel({
-        color: "black",
-        left: 50,
-        width: Ti.UI.FILL,
-        top: 15,
-        textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
-        font: {
-            fontSize: 16
-        },
-        text: "業主自讓:有蓋車位,全包,不售,清靜,獨立工人房.工作間",
-        id: "otherItemRemarks"
-    });
-    $.__views.__alloyId75.add($.__views.otherItemRemarks);
-    $.__views.__alloyId76 = Ti.UI.createView({
         bottom: 0,
         height: 1,
         left: 15,
         borderColor: "#CACACA",
         width: Ti.UI.FILL,
         borderWidth: 2,
-        id: "__alloyId76"
+        id: "__alloyId75"
     });
-    $.__views.otherMainView.add($.__views.__alloyId76);
-    $.__views.__alloyId77 = Ti.UI.createView({
+    $.__views.otherMainView.add($.__views.__alloyId75);
+    $.__views.__alloyId76 = Ti.UI.createView({
         top: "15",
         height: Ti.UI.SIZE,
         width: Ti.UI.FILL,
-        id: "__alloyId77"
+        id: "__alloyId76"
     });
-    $.__views.leftSrlView.add($.__views.__alloyId77);
-    $.__views.__alloyId78 = Ti.UI.createView({
+    $.__views.leftSrlView.add($.__views.__alloyId76);
+    $.__views.__alloyId77 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
-        id: "__alloyId78"
+        id: "__alloyId77"
     });
-    $.__views.__alloyId77.add($.__views.__alloyId78);
+    $.__views.__alloyId76.add($.__views.__alloyId77);
     $.__views.likeBtn = Ti.UI.createButton({
         width: "77dp",
         height: "37dp",
@@ -630,7 +800,7 @@ function Controller() {
         backgroundImage: "/temp/likeBtn.png",
         id: "likeBtn"
     });
-    $.__views.__alloyId78.add($.__views.likeBtn);
+    $.__views.__alloyId77.add($.__views.likeBtn);
     $.__views.emailBtn = Ti.UI.createButton({
         width: "112dp",
         height: "37dp",
@@ -638,7 +808,7 @@ function Controller() {
         backgroundImage: "/temp/emailBtn.png",
         id: "emailBtn"
     });
-    $.__views.__alloyId78.add($.__views.emailBtn);
+    $.__views.__alloyId77.add($.__views.emailBtn);
     $.__views.rightView = Ti.UI.createView({
         top: 15,
         right: 15,
@@ -658,6 +828,7 @@ function Controller() {
     $.__views.premises = Ti.UI.createLabel({
         color: "#006865",
         left: 0,
+        right: "70",
         textAlign: "left",
         font: {
             fontSize: 24,
@@ -667,12 +838,12 @@ function Controller() {
         id: "premises"
     });
     $.__views.topView.add($.__views.premises);
-    $.__views.__alloyId79 = Ti.UI.createView({
+    $.__views.__alloyId78 = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
-        id: "__alloyId79"
+        id: "__alloyId78"
     });
-    $.__views.topView.add($.__views.__alloyId79);
+    $.__views.topView.add($.__views.__alloyId78);
     $.__views.hotBtn = Ti.UI.createButton({
         backgroundImage: "/temp/hot.png",
         width: "52dp",
@@ -680,7 +851,7 @@ function Controller() {
         right: 0,
         id: "hotBtn"
     });
-    $.__views.__alloyId79.add($.__views.hotBtn);
+    $.__views.__alloyId78.add($.__views.hotBtn);
     $.__views.bottomView = Ti.UI.createView({
         borderColor: "#CACACA",
         borderWidth: "1",
@@ -721,172 +892,172 @@ function Controller() {
         id: "iconView"
     });
     $.__views.middleSrlView.add($.__views.iconView);
-    $.__views.__alloyId80 = Ti.UI.createView({
+    $.__views.__alloyId79 = Ti.UI.createView({
         top: 10,
         width: 50,
         height: 50,
         left: 5,
         borderColor: "black",
         borderWidth: 1,
+        id: "__alloyId79"
+    });
+    $.__views.iconView.add($.__views.__alloyId79);
+    $.__views.__alloyId80 = Ti.UI.createImageView({
+        image: "/propertyIcon/carparking.jpg",
         id: "__alloyId80"
     });
-    $.__views.iconView.add($.__views.__alloyId80);
-    $.__views.__alloyId81 = Ti.UI.createImageView({
-        image: "/propertyIcon/carparking.jpg",
+    $.__views.__alloyId79.add($.__views.__alloyId80);
+    $.__views.__alloyId81 = Ti.UI.createView({
+        top: 10,
+        width: 50,
+        height: 50,
+        left: 5,
+        borderColor: "black",
+        borderWidth: 1,
         id: "__alloyId81"
     });
-    $.__views.__alloyId80.add($.__views.__alloyId81);
-    $.__views.__alloyId82 = Ti.UI.createView({
-        top: 10,
+    $.__views.iconView.add($.__views.__alloyId81);
+    $.__views.__alloyId82 = Ti.UI.createImageView({
         width: 50,
         height: 50,
-        left: 5,
-        borderColor: "black",
-        borderWidth: 1,
+        image: "/propertyIcon/swimmingPool.ico",
         id: "__alloyId82"
     });
-    $.__views.iconView.add($.__views.__alloyId82);
-    $.__views.__alloyId83 = Ti.UI.createImageView({
+    $.__views.__alloyId81.add($.__views.__alloyId82);
+    $.__views.__alloyId83 = Ti.UI.createView({
+        top: 10,
         width: 50,
         height: 50,
-        image: "/propertyIcon/swimmingPool.ico",
+        left: 5,
+        borderColor: "black",
+        borderWidth: 1,
         id: "__alloyId83"
     });
-    $.__views.__alloyId82.add($.__views.__alloyId83);
-    $.__views.__alloyId84 = Ti.UI.createView({
-        top: 10,
-        width: 50,
-        height: 50,
-        left: 5,
-        borderColor: "black",
-        borderWidth: 1,
-        id: "__alloyId84"
-    });
-    $.__views.iconView.add($.__views.__alloyId84);
-    $.__views.__alloyId85 = Ti.UI.createImageView({
+    $.__views.iconView.add($.__views.__alloyId83);
+    $.__views.__alloyId84 = Ti.UI.createImageView({
         width: 50,
         height: 50,
         image: "/propertyIcon/taxi.png",
-        id: "__alloyId85"
+        id: "__alloyId84"
     });
-    $.__views.__alloyId84.add($.__views.__alloyId85);
-    $.__views.__alloyId86 = Ti.UI.createView({
+    $.__views.__alloyId83.add($.__views.__alloyId84);
+    $.__views.__alloyId85 = Ti.UI.createView({
         top: 10,
         width: 50,
         height: 50,
         left: 5,
         borderColor: "black",
         borderWidth: 1,
-        id: "__alloyId86"
+        id: "__alloyId85"
     });
-    $.__views.iconView.add($.__views.__alloyId86);
-    $.__views.__alloyId87 = Ti.UI.createImageView({
+    $.__views.iconView.add($.__views.__alloyId85);
+    $.__views.__alloyId86 = Ti.UI.createImageView({
         width: 50,
         height: 50,
         image: "/propertyIcon/train.png",
-        id: "__alloyId87"
+        id: "__alloyId86"
     });
-    $.__views.__alloyId86.add($.__views.__alloyId87);
-    $.__views.__alloyId88 = Ti.UI.createView({
+    $.__views.__alloyId85.add($.__views.__alloyId86);
+    $.__views.__alloyId87 = Ti.UI.createView({
         top: 10,
         width: 50,
         height: 50,
         left: 5,
         borderColor: "black",
         borderWidth: 1,
-        id: "__alloyId88"
+        id: "__alloyId87"
     });
-    $.__views.iconView.add($.__views.__alloyId88);
-    $.__views.__alloyId89 = Ti.UI.createImageView({
+    $.__views.iconView.add($.__views.__alloyId87);
+    $.__views.__alloyId88 = Ti.UI.createImageView({
         width: 50,
         height: 50,
         image: "/propertyIcon/bicycle.png",
+        id: "__alloyId88"
+    });
+    $.__views.__alloyId87.add($.__views.__alloyId88);
+    $.__views.__alloyId89 = Ti.UI.createView({
+        top: 10,
+        width: 50,
+        height: 50,
+        left: 5,
+        borderColor: "black",
+        borderWidth: 1,
         id: "__alloyId89"
     });
-    $.__views.__alloyId88.add($.__views.__alloyId89);
-    $.__views.__alloyId90 = Ti.UI.createView({
-        top: 10,
-        width: 50,
-        height: 50,
-        left: 5,
-        borderColor: "black",
-        borderWidth: 1,
+    $.__views.iconView.add($.__views.__alloyId89);
+    $.__views.__alloyId90 = Ti.UI.createImageView({
+        image: "/propertyIcon/carparking.jpg",
         id: "__alloyId90"
     });
-    $.__views.iconView.add($.__views.__alloyId90);
-    $.__views.__alloyId91 = Ti.UI.createImageView({
-        image: "/propertyIcon/carparking.jpg",
-        id: "__alloyId91"
-    });
-    $.__views.__alloyId90.add($.__views.__alloyId91);
-    $.__views.__alloyId92 = Ti.UI.createView({
+    $.__views.__alloyId89.add($.__views.__alloyId90);
+    $.__views.__alloyId91 = Ti.UI.createView({
         top: 10,
         width: 50,
         height: 50,
         left: 5,
         borderColor: "black",
         borderWidth: 1,
-        id: "__alloyId92"
+        id: "__alloyId91"
     });
-    $.__views.iconView.add($.__views.__alloyId92);
-    $.__views.__alloyId93 = Ti.UI.createImageView({
+    $.__views.iconView.add($.__views.__alloyId91);
+    $.__views.__alloyId92 = Ti.UI.createImageView({
         width: 50,
         height: 50,
         image: "/propertyIcon/swimmingPool.ico",
-        id: "__alloyId93"
+        id: "__alloyId92"
     });
-    $.__views.__alloyId92.add($.__views.__alloyId93);
-    $.__views.__alloyId94 = Ti.UI.createView({
+    $.__views.__alloyId91.add($.__views.__alloyId92);
+    $.__views.__alloyId93 = Ti.UI.createView({
         top: 10,
         width: 50,
         height: 50,
         left: 5,
         borderColor: "black",
         borderWidth: 1,
-        id: "__alloyId94"
+        id: "__alloyId93"
     });
-    $.__views.iconView.add($.__views.__alloyId94);
-    $.__views.__alloyId95 = Ti.UI.createImageView({
+    $.__views.iconView.add($.__views.__alloyId93);
+    $.__views.__alloyId94 = Ti.UI.createImageView({
         width: 50,
         height: 50,
         image: "/propertyIcon/taxi.png",
-        id: "__alloyId95"
+        id: "__alloyId94"
     });
-    $.__views.__alloyId94.add($.__views.__alloyId95);
-    $.__views.__alloyId96 = Ti.UI.createView({
+    $.__views.__alloyId93.add($.__views.__alloyId94);
+    $.__views.__alloyId95 = Ti.UI.createView({
         top: 10,
         width: 50,
         height: 50,
         left: 5,
         borderColor: "black",
         borderWidth: 1,
-        id: "__alloyId96"
+        id: "__alloyId95"
     });
-    $.__views.iconView.add($.__views.__alloyId96);
-    $.__views.__alloyId97 = Ti.UI.createImageView({
+    $.__views.iconView.add($.__views.__alloyId95);
+    $.__views.__alloyId96 = Ti.UI.createImageView({
         width: 50,
         height: 50,
         image: "/propertyIcon/train.png",
-        id: "__alloyId97"
+        id: "__alloyId96"
     });
-    $.__views.__alloyId96.add($.__views.__alloyId97);
-    $.__views.__alloyId98 = Ti.UI.createView({
+    $.__views.__alloyId95.add($.__views.__alloyId96);
+    $.__views.__alloyId97 = Ti.UI.createView({
         top: 10,
         width: 50,
         height: 50,
         left: 5,
         borderColor: "black",
         borderWidth: 1,
-        id: "__alloyId98"
+        id: "__alloyId97"
     });
-    $.__views.iconView.add($.__views.__alloyId98);
-    $.__views.__alloyId99 = Ti.UI.createImageView({
+    $.__views.iconView.add($.__views.__alloyId97);
+    $.__views.__alloyId98 = Ti.UI.createImageView({
         width: 50,
         height: 50,
         image: "/propertyIcon/bicycle.png",
-        id: "__alloyId99"
+        id: "__alloyId98"
     });
-    $.__views.__alloyId98.add($.__views.__alloyId99);
+    $.__views.__alloyId97.add($.__views.__alloyId98);
     $.__views.smallImgSrlView = Ti.UI.createScrollView({
         showVerticalScrollIndicator: false,
         showHorizontalScrollIndicator: false,
@@ -919,6 +1090,7 @@ function Controller() {
     var rePropDetailTmpl2 = {
         check: 0,
         init: function() {
+            this.setLangTitle();
             this.setDetail();
             $.smallImgSrlView.addEventListener("postlayout", function() {
                 if (0 == rePropDetailTmpl2.check) {
@@ -934,6 +1106,16 @@ function Controller() {
             img.left = "80%";
             $.priceItemView.add(img);
         },
+        setLangTitle: function() {
+            $.leftTitle.setText(s("forPrice"));
+            $.priceLabel.setText(s("Price"));
+            $.rentLabel.setText(s("Rent"));
+            $.areaLabel.setText(s("Area"));
+            $.netUnit.setText(s("netUnit"));
+            $.grossUnit.setText(s("grossUnit"));
+            $.othersLabel.setText(s("others"));
+            $.otherItemRemarksLabel.setText(s("remarks"));
+        },
         setDetail: function() {
             propdetail = getProp.getDetail(args.propertyno, args.propgroup);
             $.premises.text = propdetail[lang + "_premises"];
@@ -944,10 +1126,15 @@ function Controller() {
             $.netarea.text = comjs.addCommas(propdetail["netarea"]) + "呎";
             $.grossarea.text = comjs.addCommas(propdetail["grossarea"]) + "呎";
             $.otherItemRemarks.text = propdetail[lang + "_remarks"];
-            (0 == propdetail["rent"] || "" == propdetail["rent"]) && $.leftSrlView.remove($.rentView);
+            $.remarkContainView.height = 70;
+            if (0 == propdetail["rent"] || "" == propdetail["rent"]) {
+                $.leftSrlView.remove($.rentView);
+                console.log(s("forPrice"));
+                $.leftTitle.setText(s("forPrice"));
+            }
             if (0 == propdetail["price"] || "" == propdetail["price"]) {
                 $.leftSrlView.remove($.priceView);
-                $.leftTitle.setText("出租");
+                $.leftTitle.setText(s("forRent"));
             }
         },
         setMap: function(addr) {
