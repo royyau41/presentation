@@ -908,7 +908,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId80);
     $.__views.__alloyId81 = Ti.UI.createImageView({
-        image: "/propertyIcon/carparking.jpg",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/parking.png",
         id: "__alloyId81"
     });
     $.__views.__alloyId80.add($.__views.__alloyId81);
@@ -923,9 +925,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId82);
     $.__views.__alloyId83 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/swimmingPool.ico",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/swimming.png",
         id: "__alloyId83"
     });
     $.__views.__alloyId82.add($.__views.__alloyId83);
@@ -940,9 +942,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId84);
     $.__views.__alloyId85 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/taxi.png",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/room1.png",
         id: "__alloyId85"
     });
     $.__views.__alloyId84.add($.__views.__alloyId85);
@@ -957,9 +959,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId86);
     $.__views.__alloyId87 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/train.png",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/mtr.png",
         id: "__alloyId87"
     });
     $.__views.__alloyId86.add($.__views.__alloyId87);
@@ -974,9 +976,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId88);
     $.__views.__alloyId89 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/bicycle.png",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/licenseW.png",
         id: "__alloyId89"
     });
     $.__views.__alloyId88.add($.__views.__alloyId89);
@@ -991,7 +993,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId90);
     $.__views.__alloyId91 = Ti.UI.createImageView({
-        image: "/propertyIcon/carparking.jpg",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/parking.png",
         id: "__alloyId91"
     });
     $.__views.__alloyId90.add($.__views.__alloyId91);
@@ -1006,9 +1010,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId92);
     $.__views.__alloyId93 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/swimmingPool.ico",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/swimming.png",
         id: "__alloyId93"
     });
     $.__views.__alloyId92.add($.__views.__alloyId93);
@@ -1023,9 +1027,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId94);
     $.__views.__alloyId95 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/taxi.png",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/room1.png",
         id: "__alloyId95"
     });
     $.__views.__alloyId94.add($.__views.__alloyId95);
@@ -1040,9 +1044,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId96);
     $.__views.__alloyId97 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/train.png",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/mtr.png",
         id: "__alloyId97"
     });
     $.__views.__alloyId96.add($.__views.__alloyId97);
@@ -1057,9 +1061,9 @@ function Controller() {
     });
     $.__views.iconView.add($.__views.__alloyId98);
     $.__views.__alloyId99 = Ti.UI.createImageView({
-        width: 50,
-        height: 50,
-        image: "/propertyIcon/bicycle.png",
+        width: 32,
+        height: 32,
+        image: "/propertyIcon/licenseW.png",
         id: "__alloyId99"
     });
     $.__views.__alloyId98.add($.__views.__alloyId99);

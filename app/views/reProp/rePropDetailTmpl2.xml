@@ -130,7 +130,7 @@
 								</ImageView>
 							</View>	
 							<View class='iconContainer'> 
-								<ImageView class='icon' class='taxi'>
+								<ImageView class='icon' class='room1'>
 									
 								</ImageView>
 							</View>	
@@ -140,7 +140,7 @@
 								</ImageView>
 							</View>	
 							<View class='iconContainer'>
-								<ImageView class='icon' class='bicycle'>
+								<ImageView class='icon' class='wine'>
 									
 								</ImageView>
 							</View>
@@ -156,7 +156,7 @@
 								</ImageView>
 							</View>	
 							<View class='iconContainer'>
-								<ImageView class='icon' class='taxi'>
+								<ImageView class='icon' class='room1'>
 									
 								</ImageView>
 							</View>	
@@ -166,7 +166,7 @@
 								</ImageView>
 							</View>	
 							<View class='iconContainer'>
-								<ImageView class='icon' class='bicycle'>
+								<ImageView class='icon' class='wine'>
 									
 								</ImageView>
 							</View>	

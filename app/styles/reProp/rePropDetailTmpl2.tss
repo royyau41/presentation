@@ -351,27 +351,29 @@
 					borderWidth:1
 				}
 				,".carPark":{
-					image:'/propertyIcon/carparking.jpg'
+					width:32,
+					height:32,
+					image:'/propertyIcon/parking.png'
 				}
 				,".swimming":{
-					width:50,
-					height:50,
-					image:'/propertyIcon/swimmingPool.ico'
+					width:32,
+					height:32,
+					image:'/propertyIcon/swimming.png'
 				}
-				,".taxi":{
-					width:50,
-					height:50,
-					image:'/propertyIcon/taxi.png'
+				,".room1":{
+					width:32,
+					height:32,
+					image:'/propertyIcon/room1.png'
 				}
 				,".train":{
-					width:50,
-					height:50,
-					image:'/propertyIcon/train.png'
+					width:32,
+					height:32,
+					image:'/propertyIcon/mtr.png'
 				}
-				,".bicycle":{
-					width:50,
-					height:50,
-					image:'/propertyIcon/bicycle.png'
+				,".wine":{
+					width:32,
+					height:32,
+					image:'/propertyIcon/licenseW.png'
 				}
   		/*###########    Right Image############*/
   		,"#smallImgSrlView":{
