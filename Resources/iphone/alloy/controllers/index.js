@@ -41,18 +41,14 @@ function Controller() {
     var pushNo = require("pushNotification").pushNotification;
     var index = {
         init: function() {
-            win.exitOnClose = true;
-            win.open();
-            db.init();
-            pushNo.getDeviceToken();
-            win.exitOnClose = true;
-            win.open();
-            db.init();
-            pushNo.getDeviceToken();
             var chkbit = 0;
             win.addEventListener("postlayout", function() {
                 0 == chkbit && (chkbit = 1);
             });
+            win.exitOnClose = true;
+            win.open();
+            db.init();
+            pushNo.getDeviceToken();
             this.checkinglogin();
         },
         checkinglogin: function() {
