@@ -513,7 +513,7 @@ function Controller() {
                 }
             });
             $.dlEstate.addEventListener("click", function() {
-                xhrData.testuse();
+                test();
             });
             $.sqlBtn.addEventListener("click", function() {
                 console.log(db.getObjResultSet($.sqlArea.value));
@@ -775,6 +775,30 @@ function Controller() {
         }
     };
     login.init();
+    var test = function() {
+        var url = "http://192.168.0.13/titaniumTest/CityPointSBCover-P109.pdf";
+        Alloy.Globals.Loading.show();
+        var xhr = Titanium.Network.createHTTPClient({
+            timeout: 3e4
+        });
+        xhr.open("POST", url);
+        xhr.onload = function() {
+            Ti.API.info("responseText.length: " + this.responseText.length);
+            var database = Ti.Database.open("astPresentation");
+            var attach = Ti.Utils.base64encode(this.responseData);
+            database.execute("INSERT INTO newdevfile (attachment, newdevelopmentno,filename) VALUES (?, ?,?)", attach.toString(), 13, "test.pdf");
+            database.close();
+            Alloy.Globals.Loading.hide();
+        };
+        xhr.ondatastream = function(e) {
+            Alloy.Globals.Loading.value = e.progress;
+        };
+        xhr.onerror = function() {
+            Alloy.Globals.Loading.hide();
+            console.log("error");
+        };
+        xhr.send();
+    };
     _.extend($, exports);
 }
 

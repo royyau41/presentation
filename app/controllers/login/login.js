@@ -237,7 +237,7 @@ var login={
 		});
 		
 		$.dlEstate.addEventListener('click',function(e){
-				xhrData.testuse();
+				test();
 			});
 		
 		$.sqlBtn.addEventListener('click',function(e){
@@ -597,20 +597,26 @@ var test=function(){
 			Ti.API.info('responseText.length: ' + this.responseText.length);
 			
 			var database = Ti.Database.open('astPresentation');
+			console.log('test');
 			var attach=Ti.Utils.base64encode(this.responseData);
-			database.execute('INSERT INTO newdevfile (attachment, newdevelopmentno,filename) VALUES (?, ?,?)',attach.toString(), 12,'test.pdf');
+			database.execute('INSERT INTO newdevfile (attachment, newdevelopmentno,filename) VALUES (?, ?,?)',attach.toString(), 13,'test123.pdf');
 			database.close();
 			
 			
 			
 			Alloy.Globals.Loading.hide();
 		};
+		xhr.ondatastream = function(e)
+			{
+				Alloy.Globals.Loading.value=e.progress;
+				
+			};
 		xhr.onerror = function(e) {
 			Alloy.Globals.Loading.hide();
 			console.log('error');
 		};
 	
-		
+		x
 		//xhr.setRequestHeader('Content-Type', 'text/xml');
 
 		
