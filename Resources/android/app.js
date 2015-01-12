@@ -123,6 +123,8 @@ Alloy.Globals.getfieldTitle = function(field, type) {
     return obj[Ti.App.Properties.getString("lang", "c") + type];
 };
 
+Alloy.Globals.langIso = Ti.App.Properties.getString("langIso", "c");
+
 Alloy.Globals.lang = Ti.App.Properties.getString("lang", "c");
 
 Alloy.Globals.showdowColor = "#bbb";

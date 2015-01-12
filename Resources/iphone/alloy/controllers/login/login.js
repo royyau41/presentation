@@ -461,6 +461,8 @@ function Controller() {
                     e.source.setBackgroundGradient(Alloy.Globals.btnSelectedColor);
                     Ti.App.Properties.setString("lang", e.source.lang);
                     Ti.App.Properties.setString("langIso", e.source.langIso);
+                    Alloy.Globals.langIso = e.source.langIso;
+                    Alloy.Globals.lang = e.source.lang;
                     var data = {
                         menu: menuStyle
                     };
@@ -785,8 +787,9 @@ function Controller() {
         xhr.onload = function() {
             Ti.API.info("responseText.length: " + this.responseText.length);
             var database = Ti.Database.open("astPresentation");
+            console.log("test");
             var attach = Ti.Utils.base64encode(this.responseData);
-            database.execute("INSERT INTO newdevfile (attachment, newdevelopmentno,filename) VALUES (?, ?,?)", attach.toString(), 13, "test.pdf");
+            database.execute("INSERT INTO newdevfile (attachment, newdevelopmentno,filename) VALUES (?, ?,?)", attach.toString(), 13, "test123.pdf");
             database.close();
             Alloy.Globals.Loading.hide();
         };
@@ -797,6 +800,7 @@ function Controller() {
             Alloy.Globals.Loading.hide();
             console.log("error");
         };
+        x;
         xhr.send();
     };
     _.extend($, exports);

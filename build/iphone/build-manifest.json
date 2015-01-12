@@ -1,8 +1,9 @@
 {
-	"target": "simulator",
-	"deployType": "development",
+	"target": "device",
+	"deployType": "test",
 	"iosSdkVersion": "8.1",
 	"deviceFamily": "universal",
+	"developerName": "Man Chun Leung (P52HBUE6D2)",
 	"iosSdkPath": "/Users/Roy/Library/Application Support/Titanium/mobilesdk/osx/3.4.1.GA/iphone",
 	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
 	"modulesHash": "9fbc32decd1c49c74840214eab104330",
@@ -17,8 +18,8 @@
 	"description": "not specified",
 	"copyright": "2014 by roy",
 	"guid": "430ba189-d5ef-4f0b-9a85-80fa76f4dbaf",
-	"skipJSMinification": true,
+	"skipJSMinification": false,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false
+	"encryptJS": true
 }

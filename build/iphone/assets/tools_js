@@ -1,0 +1,1 @@
+exports.mortagageTool=function(e){var t=new baseUi(!0),i=t.getMortagageView();e.win&&e.win.add(i);var o=Ti.UI.createImageView({width:27,height:40,backgroundImage:"/temp/calculator1.png"});return o.addEventListener("click",function(){var e=Ti.UI.createAnimation({left:10,duration:200});i.animate(e)}),o};

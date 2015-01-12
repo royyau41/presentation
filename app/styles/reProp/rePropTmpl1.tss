@@ -79,7 +79,7 @@
 	color:'#006865'
 }
 ,"#rePropTmpl1BestSale":{
-	backgroundImage : "/temp/hot.png",
+	//backgroundImage : "/temp/"+Alloy.Globals.langIso+"/hot.png",
 	width:'52dp',
 	height:'37dp',
 	top:0,

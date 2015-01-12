@@ -74,7 +74,6 @@ function Controller() {
     });
     $.__views.rePropTmpl1RowView.add($.__views.rePropTmpl1MainDetailView);
     $.__views.rePropTmpl1BestSale = Ti.UI.createView({
-        backgroundImage: "/temp/hot.png",
         width: "52dp",
         height: "37dp",
         top: 0,
@@ -159,6 +158,7 @@ function Controller() {
     args.attachment && ($.rePropTmpl1Image.image = Ti.Utils.base64decode(args.attachment));
     $.rePropTmpl1Addr.text = args[Ti.App.Properties.getString("lang", "c") + "_premises"] || "";
     $.rePropTmpl1Order.text = args.order;
+    $.rePropTmpl1BestSale.backgroundImage = "/temp/" + Alloy.Globals.langIso + "/hot.png";
     ("development" == Ti.App.deployType || "test" == Ti.App.deployType) && comjs.changeColor($.rePropTmpl1Addr, win);
     $.reTableRow.addEventListener("click", function() {
         getProp.updateRead(" id=" + args.id);

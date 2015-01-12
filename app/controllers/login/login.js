@@ -152,6 +152,8 @@ var login={
 				e.source.setBackgroundGradient(Alloy.Globals.btnSelectedColor);
 				Ti.App.Properties.setString('lang',e.source.lang);
 				Ti.App.Properties.setString('langIso',e.source.langIso);
+				Alloy.Globals.langIso=e.source.langIso;
+				Alloy.Globals.lang=e.source.lang;
 				
 				var data={
 					menu:menuStyle
