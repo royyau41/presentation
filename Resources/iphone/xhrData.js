@@ -28,7 +28,6 @@ var xhrData = {
         return header + elmXml + footer;
     },
     request: function(o, data, xml, tries) {
-        Alloy.Globals.Loading.show();
         var url = data.ip ? "http://" + data.ip + "/getinfo" : "http://astbsl.com.hk:88/getinfo";
         var xhr = Titanium.Network.createHTTPClient({
             timeout: 6e4
@@ -40,6 +39,7 @@ var xhrData = {
         };
         xhr.open("POST", url);
         xhr.onload = function() {
+            Ti.API.info(this.getResponseHeader("Content-Length"));
             var xmldata = this.responseXML;
             xmldata = new XMLTools(xmldata).toJSON();
             xmldata = JSON.parse(xmldata);

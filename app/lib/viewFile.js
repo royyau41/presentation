@@ -69,7 +69,7 @@ var viewFile=function(type,data,returnFileView,specData){
 			}
 			else {
 				var titouchgallery = require('com.gbaldera.titouchgallery');
-				Ti.API.info("module is => " + JSON.stringify(titouchgallery));
+				
 				var f = Ti.Filesystem.getFile(Ti.Filesystem.tempDirectory,'test.jpg');
 					f.write(data); // write to the file
 					

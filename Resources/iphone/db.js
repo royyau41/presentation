@@ -90,6 +90,7 @@ var db = {
         }
         Sql = Sql + field.join() + ") values (" + value.join() + ")";
         this.database = Ti.Database.open("astPresentation");
+        console.log("aaa");
         eval("this.database.execute('" + Sql + "'" + value_end + ");");
         this.database.close();
     },

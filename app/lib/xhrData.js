@@ -41,7 +41,7 @@ var xhrData = {
 
 	}
 	,request:function(o, data,xml,tries,testUse) {
-		Alloy.Globals.Loading.show();
+		
 		var url=(data.ip)?'http://'+data.ip+'/getinfo':'http://astbsl.com.hk:88/getinfo';
 
 		var xhr = Titanium.Network.createHTTPClient({
@@ -52,7 +52,8 @@ var xhrData = {
 		tries = tries || 0;
 		xhr.ondatastream = function(e)
 			{
-				Alloy.Globals.Loading.value=e.progress;
+				Alloy.Globals.Loading.value=e.progress;	
+				//var kb = Math.round(e.progress * c.getResponseHeader('Content-Length')/1024);
 				
 			};
 		
@@ -60,7 +61,7 @@ var xhrData = {
 		xhr.onload = function(e) {
 			
 			
-			 //Ti.API.info( this.getResponseHeader('Content-Length') );
+			 Ti.API.info( this.getResponseHeader('Content-Length') );
 			var i=0;
 			var xmldata=this.responseXML;
 			

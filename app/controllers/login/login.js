@@ -233,6 +233,7 @@ var login={
 			 loginInfo=Ti.App.Properties.getObject('loginInfo',false);
 			 if (loginInfo){
 			 	dlindex=1;
+			 	Alloy.Globals.Loading.show();
 				 dldata.dlProcess();
 			}
 		
@@ -387,7 +388,6 @@ var dldata={
 					var sql='select number from doctype as p where not exists(select id from document as f where f.DOCUMENTTYPE=p.number) and (deletedate=0) group by number';
 					
 					this.doc=db.getObjResultSet(sql);
-					console.log(this.doc);
 					this.getDataRequest(0,'DOCUMENTS','document',false,'NUMBER');
 				break;
 				case 99:
@@ -423,7 +423,7 @@ var dldata={
 				xhrData.request({  
 				success:function(e){
 				if (test){
-						console.log(e);
+					
 				}else {
 					if (e){
 						if (e[checkField]){
