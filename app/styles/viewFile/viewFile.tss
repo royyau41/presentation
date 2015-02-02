@@ -25,7 +25,7 @@
 			//title:' < Back',
 			left:5,
 			top:5,
-			backgroundImage : "/temp/imgback.png",
+			//backgroundImage : "/temp/" Alloy.Globals.langIso+"/imgback.png",
 			width:80,
 			height:43			
 		}

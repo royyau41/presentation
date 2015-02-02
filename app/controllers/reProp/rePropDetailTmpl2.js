@@ -67,7 +67,7 @@ var rePropDetailTmpl2={
 		// 沒有租價
 		if (propdetail['rent']==0 ||propdetail['rent']==''){
 			$.leftSrlView.remove($.rentView);
-			console.log(s('forPrice'));
+			
 			$.leftTitle.setText(s('forPrice'));
 		}
 		// 沒有售價轉出租

@@ -1,4 +1,5 @@
 var args = arguments[0] || {};
+$.backBtn.backgroundImage="/temp/"+Alloy.Globals.langIso+"/imgback.png";
 $.backBtn.addEventListener('click',function(e){
 	if (OS_IOS)
 	$.viewFileWin.close({transition:Titanium.UI.iPhone.AnimationStyle.CURL_DOWN});
@@ -15,7 +16,7 @@ var topViewShow = Ti.UI.createAnimation({
 });
 
 var topViewHide=Ti.UI.createAnimation({
-	top : '-'+$.topView.toImage().height,
+	top : '-'+$.topView.toImage().height, 
 	//curve : Ti.UI.ANIMATION_CURVE_EASE_OUT,
 	duration : 500
 });

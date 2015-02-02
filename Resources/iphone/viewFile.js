@@ -11,43 +11,18 @@ var viewFile = function(type, data, returnFileView, specData) {
             height: Ti.Platform.displayCaps.platformHeight - 10,
             image: data,
             opacity: 1,
-            zIndex: 1
+            zIndex: 1,
+            animating: true
         });
-        win.children[1].add(image);
-        var pinching = false;
-        var scale = 1;
-        ;
-        ;
-        var deltaX, deltaY;
-        var olt = Titanium.UI.create2DMatrix();
-        win.children[1].addEventListener("pinch", function(e) {
-            pinching = true;
-            var test = 1;
-            if (e.scale.toFixed(2) != scale) {
-                test = 1 + (e.scale - scale);
-                scale = e.scale.toFixed(2);
-                test > 0 && (olt = olt.scale(test));
-                image.transform = olt;
-            }
+        var img1Wrapper = Ti.UI.createScrollView({
+            width: Ti.UI.FILL,
+            height: Ti.UI.FILL,
+            contentWidth: Ti.UI.FILL,
+            contentHeight: Ti.UI.FILL,
+            maxZoomScale: 4
         });
-        image.addEventListener("touchend", function() {
-            pinching = false;
-        });
-        image.addEventListener("touchstart", function(e) {
-            scale = 1;
-            curX = e.x;
-            curY = e.y;
-        });
-        image.addEventListener("touchmove", function(e) {
-            if (!pinching) {
-                deltaX = e.x - curX, deltaY = e.y - curY;
-                olt = olt.translate(deltaX, deltaY);
-                image.animate({
-                    transform: olt,
-                    duration: 100
-                });
-            }
-        });
+        img1Wrapper.add(image);
+        win.children[1].add(img1Wrapper);
         win.open({
             theme: "Theme.noActionBar",
             transition: Titanium.UI.iPhone.AnimationStyle.CURL_UP
