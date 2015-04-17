@@ -48,7 +48,6 @@ function Controller() {
     $.__views.backBtn = Ti.UI.createButton({
         left: 5,
         top: 5,
-        backgroundImage: "/temp/imgback.png",
         width: 80,
         height: 43,
         id: "backBtn"
@@ -77,6 +76,7 @@ function Controller() {
     exports.destroy = function() {};
     _.extend($, $.__views);
     var args = arguments[0] || {};
+    $.backBtn.backgroundImage = "/temp/" + Alloy.Globals.langIso + "/imgback.png";
     $.backBtn.addEventListener("click", function() {
         $.viewFileWin.close();
     });

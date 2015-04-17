@@ -304,6 +304,7 @@ var login={
 			FUNCTIONNAME:'Register',
 			USERCODE:$.USERCODE.value.toUpperCase(),
 			USERPASSWORD:$.USERPASSWORD.value,
+			//:940,
 			Device_ID:Ti.Platform.id
 		};
 		return passToServer;

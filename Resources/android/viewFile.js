@@ -6,11 +6,6 @@ var viewFile = function(type, data, returnFileView, specData) {
         var win = Alloy.createController("viewFile/viewFile").getView();
         var image;
         ;
-        ;
-        ;
-        ;
-        ;
-        ;
         var titouchgallery = require("com.gbaldera.titouchgallery");
         var f = Ti.Filesystem.getFile(Ti.Filesystem.tempDirectory, "test.jpg");
         f.write(data);

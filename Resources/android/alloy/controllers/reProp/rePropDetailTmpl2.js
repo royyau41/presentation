@@ -1138,7 +1138,6 @@ function Controller() {
             $.remarkContainView.height = 70;
             if (0 == propdetail["rent"] || "" == propdetail["rent"]) {
                 $.leftSrlView.remove($.rentView);
-                console.log(s("forPrice"));
                 $.leftTitle.setText(s("forPrice"));
             }
             if (0 == propdetail["price"] || "" == propdetail["price"]) {
