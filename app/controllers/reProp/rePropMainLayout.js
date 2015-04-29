@@ -38,6 +38,10 @@ var reProp={
 		$.rePropSearchPrice.text=s('price');
 		$.rePropSearchRent.text=s('rent');
 		$.rePropSearchNarea.text=s('narea');
+		$.addrValue.test=s('orderasc');
+		$.priceValue.test=s('orderasc');
+		$.rentValue.test=s('orderasc');
+		$.nareaValue.test=s('orderasc');
 	}
 	,showProp:function(record){
 		

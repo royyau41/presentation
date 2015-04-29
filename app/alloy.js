@@ -25,10 +25,10 @@ Alloy.Globals.getfieldTitle=function(field,type){
 	var obj={};
 	switch(field){
 		case 'garea':
-			obj={'c':'建築面積:','e':'Gross Area:','eWidth':'100dp'};
+			obj={'c':'建築面積:','e':'Gross Area:','eWidth':'130dp'};
 		break;
 		case 'narea':
-			obj={'c':'實用面積:','e':'Net Area:'};
+			obj={'c':'實用面積:','e':'Saleable Area:','eWidth':'130dp'};
 		break;
 		case 'district':
 			obj={'c':'區域:','e':'District:'};

@@ -38,8 +38,8 @@
 						<Label class='leftItemLabel' id='areaLabel' text='面積'></Label>
 						<View class='leftItemValueView'>
 							<View class='leftItemHorView'>
-								<Label class='valueTitle' id = 'netUnit'text='實用 :'></Label>
-								<Label class='rightItemValue' id = 'netarea'text='1,146 呎'></Label>								
+								<Label class='valueTitle' id = 'netUnit' text='實用 :'></Label>
+								<Label class='rightItemValue' id = 'netarea' text='1,146 呎'></Label>								
 							</View>
 							<View class='leftItemHorView'>
 								<Label class='valueTitle' id = 'grossUnit'text='建築 :'></Label>

@@ -22,14 +22,15 @@ Alloy.Globals.getfieldTitle = function(field, type) {
         obj = {
             c: "建築面積:",
             e: "Gross Area:",
-            eWidth: "100dp"
+            eWidth: "130dp"
         };
         break;
 
       case "narea":
         obj = {
             c: "實用面積:",
-            e: "Net Area:"
+            e: "Saleable Area:",
+            eWidth: "130dp"
         };
         break;
 

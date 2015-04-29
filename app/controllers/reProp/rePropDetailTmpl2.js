@@ -35,6 +35,7 @@ var rePropDetailTmpl2={
 		
 	}
 	,setLangTitle:function(){
+		
 		$.leftTitle.setText(s('forPrice'));
 		$.priceLabel.setText(s('Price'));
 		$.rentLabel.setText(s('Rent'));
@@ -43,6 +44,7 @@ var rePropDetailTmpl2={
 		$.grossUnit.setText(s('grossUnit'));
 		$.othersLabel.setText(s('others'));
 		$.otherItemRemarksLabel.setText(s('remarks'));
+		$.iconLabel.setText(s('facilities'));
 		
 		$.hotBtn.backgroundImage="/temp/"+Alloy.Globals.langIso+"/hot.png";
 		
@@ -50,18 +52,15 @@ var rePropDetailTmpl2={
 	}
 	,setDetail:function(){
 		
-		 propdetail=getProp.getDetail(args.propertyno,args.propgroup);
+		propdetail=getProp.getDetail(args.propertyno,args.propgroup);
 		
 		$.premises.text=propdetail[lang+'_premises'];
-	
-		
-		
 		$.price.text=comjs.addCommas(propdetail['price']*100);
 		$.avgprice.text='@'+comjs.addCommas(propdetail['averageprice']);
 		$.avgrent.text='@'+comjs.addCommas(propdetail['averagerent']);
 		$.rent.text=comjs.addCommas(propdetail['rent']);
-		$.netarea.text=comjs.addCommas(propdetail['netarea'])+'呎';
-		$.grossarea.text=comjs.addCommas(propdetail['grossarea'])+'呎';
+		$.netarea.text=comjs.addCommas(propdetail['netarea'])+' '+s('ft');
+		$.grossarea.text=comjs.addCommas(propdetail['grossarea'])+' '+s('ft');
 		$.otherItemRemarks.text=propdetail[lang+'_remarks'];
 		$.remarkContainView.height=70;
 		// 沒有租價

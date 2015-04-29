@@ -13,13 +13,20 @@ var string =function(type){
 	var orderdesc={'zh':'遞減','en':'Desc'};
 	var orderasc={'zh':'遞增','en':'Asc'};
 	
+	
+	
 	var rent ={'zh':'租金','en':'Rent'};
 	var price ={'zh':'售價','en':'Price'};
 	var addr={'zh':'地址','en':'Address'};
-	var narea={'zh':'實用面積','en':'Net Area'};
+	var narea={'zh':'實用面積','en':'Saleable Area'};
 	var area={'zh':'面積','en':'Area'};
-	var netunit={'zh':'實用','en':'Net'};
+	var netunit={'zh':'實用','en':'Saleable'};
 	var grossunit={'zh':'建築','en':'Gross'};
+	var facilities={'zh':'設施／鄰近設施','en':'Facilities／Nearby Facilities'};
+	
+	
+	var ft={'zh':'呎','en':'ft'};
+	
 	
 	return eval(type+'[Ti.App.Properties.getString(\'langIso\',\'zh\')]'); 
 };
