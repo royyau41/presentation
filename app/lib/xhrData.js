@@ -61,14 +61,14 @@ var xhrData = {
 		xhr.onload = function(e) {
 			
 			
-			 Ti.API.info( this.getResponseHeader('Content-Length') );
+			 
 			var i=0;
 			var xmldata=this.responseXML;
 			
 		
 			
 			xmldata = new XMLTools(xmldata).toJSON();
-			
+			console.log('testXML TO JSON');
 			//xmldata=utf8.decode(xmldata);
 			
 			xmldata=JSON.parse(xmldata);

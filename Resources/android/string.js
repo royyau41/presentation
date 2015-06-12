@@ -38,7 +38,7 @@ var string = function(type) {
     };
     var narea = {
         zh: "實用面積",
-        en: "Net Area"
+        en: "Saleable Area"
     };
     var area = {
         zh: "面積",
@@ -46,11 +46,19 @@ var string = function(type) {
     };
     var netunit = {
         zh: "實用",
-        en: "Net"
+        en: "Saleable"
     };
     var grossunit = {
         zh: "建築",
         en: "Gross"
+    };
+    var facilities = {
+        zh: "設施／鄰近設施",
+        en: "Facilities／Nearby Facilities"
+    };
+    var ft = {
+        zh: "呎",
+        en: "ft"
     };
     return eval(type + "[Ti.App.Properties.getString('langIso','zh')]");
 };

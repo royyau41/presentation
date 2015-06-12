@@ -56,7 +56,7 @@ var f = {
             device_token: pushNotification.token,
             type: "android"
         }, function(e) {
-            alert(e.success ? "Subscribed" : "Error 888:\n" + (e.error && e.message || JSON.stringify(e)));
+            e.success || alert("Error 888:\n" + (e.error && e.message || JSON.stringify(e)));
         });
     },
     subscribeToChannel: function() {
@@ -65,7 +65,7 @@ var f = {
             device_token: pushNotification.token,
             type: "android"
         }, function(e) {
-            alert(e.success ? "Subscribed" : "Error 888:\n" + (e.error && e.message || JSON.stringify(e)));
+            e.success || alert("Error 888:\n" + (e.error && e.message || JSON.stringify(e)));
         });
     },
     deviceTokenSuccess: function(e) {

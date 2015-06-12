@@ -39,9 +39,9 @@ var xhrData = {
         };
         xhr.open("POST", url);
         xhr.onload = function() {
-            Ti.API.info(this.getResponseHeader("Content-Length"));
             var xmldata = this.responseXML;
             xmldata = new XMLTools(xmldata).toJSON();
+            console.log("testXML TO JSON");
             xmldata = JSON.parse(xmldata);
             xmldata = xmldata["soap:Body"].data.group;
             o.success ? o.success(xmldata) : Alloy.Globals.Loading.hide();

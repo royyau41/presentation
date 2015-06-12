@@ -7,9 +7,11 @@ var mainView=basicui.getMainView();
 var deviceToken = null;
 var pushNo=require('pushNotification').pushNotification;
 
+
+
+
 var index={
 	init:function(){   
-		
 		var chkbit=0;
 		win.addEventListener('postlayout',function(e){
 			if (chkbit==0){
@@ -43,6 +45,7 @@ var index={
 	
 	
 		this.checkinglogin();
+		//this.dumpSQL();
 		//mainView.add(this.currentView);
 	}
 	,checkinglogin :function(){
@@ -102,6 +105,7 @@ var index={
 		}
 		
 	}
+	
 };
 
 function createNotification(){
@@ -119,6 +123,15 @@ function createNotification(){
 	Titanium.Android.NotificationManager.notify(1, notification);
 	
 }
+
+
+
+
+
+
+
+
+
 
 
 index.init();

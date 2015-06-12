@@ -134,7 +134,7 @@ var f={
 					        type: Ti.Platform.name == 'android' ? 'android' : 'ios'
 					    }, function (e) {
 					 if (e.success) {
-					            alert('Subscribed');
+					           // alert('Subscribed');
 					        } else {
 					            alert('Error 888:\n' +
 					                ((e.error && e.message) || JSON.stringify(e)));
@@ -153,7 +153,7 @@ var f={
 					        type: Ti.Platform.name == 'android' ? 'android' : 'ios'
 					    }, function (e) {
 					 if (e.success) {
-					            alert('Subscribed');
+					           // alert('Subscribed');
 					        } else {
 					            alert('Error 888:\n' +
 					                ((e.error && e.message) || JSON.stringify(e)));

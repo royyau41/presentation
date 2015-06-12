@@ -195,7 +195,7 @@ var db = {
 			'attachment blob,  '+ 
 			'deletedate integer DEFAULT 0, '+
 			'updateinfo text);');
-		this.database.execute('CREATE TABLE IF NOT EXISTS newdevfile( '+
+			this.database.execute('CREATE TABLE IF NOT EXISTS newdevfile( '+
 			'id INTEGER PRIMARY KEY AUTOINCREMENT, '+
 			'newdevelopmentno integer, '+
 			'filename text,  '+

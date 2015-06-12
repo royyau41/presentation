@@ -1123,6 +1123,7 @@ function Controller() {
             $.grossUnit.setText(s("grossUnit"));
             $.othersLabel.setText(s("others"));
             $.otherItemRemarksLabel.setText(s("remarks"));
+            $.iconLabel.setText(s("facilities"));
             $.hotBtn.backgroundImage = "/temp/" + Alloy.Globals.langIso + "/hot.png";
         },
         setDetail: function() {
@@ -1132,8 +1133,8 @@ function Controller() {
             $.avgprice.text = "@" + comjs.addCommas(propdetail["averageprice"]);
             $.avgrent.text = "@" + comjs.addCommas(propdetail["averagerent"]);
             $.rent.text = comjs.addCommas(propdetail["rent"]);
-            $.netarea.text = comjs.addCommas(propdetail["netarea"]) + "呎";
-            $.grossarea.text = comjs.addCommas(propdetail["grossarea"]) + "呎";
+            $.netarea.text = comjs.addCommas(propdetail["netarea"]) + " " + s("ft");
+            $.grossarea.text = comjs.addCommas(propdetail["grossarea"]) + " " + s("ft");
             $.otherItemRemarks.text = propdetail[lang + "_remarks"];
             $.remarkContainView.height = 70;
             if (0 == propdetail["rent"] || "" == propdetail["rent"]) {

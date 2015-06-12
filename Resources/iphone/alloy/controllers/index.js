@@ -8,6 +8,71 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
+    function DBDump(dbName) {
+        var self = this;
+        this.db = dbName;
+        this.conn = null;
+        this.getMaster = function() {
+            var results = [];
+            var resultSet = self.conn.execute("SELECT * FROM sqlite_master WHERE type = 'table';");
+            while (resultSet.isValidRow()) {
+                results.push({
+                    name: resultSet.fieldByName("name"),
+                    tbl_name: resultSet.fieldByName("tbl_name"),
+                    sql: resultSet.fieldByName("sql")
+                });
+                resultSet.next();
+            }
+            resultSet.close();
+            return results;
+        };
+        this.getFieldArray = function(sql, tableName) {
+            var regs = [ /CREATE TABLE /, / INTEGER PRIMARY KEY/, /VARCHAR/g, /INTEGER/g, /TEXT/g, /\([0-9]+\)/g, /\(/g, /\)/g ];
+            for (var i = 0; i < regs.length; i++) sql = sql.replace(regs[i], "");
+            sql = sql.replace(tableName + " ", "");
+            sql = sql.replace(/ ,/g, ",");
+            sql = sql.replace(/ /g, "");
+            var fieldArray = sql.split(",");
+            return fieldArray;
+        };
+        this.getInsertSQL = function(tableName, allFields) {
+            var insertArray = [];
+            var resultSet = self.conn.execute("SELECT * FROM " + tableName + ";");
+            while (resultSet.isValidRow()) {
+                var valuesArray = [];
+                var fieldsArray = [];
+                for (var i = 0; i < allFields.length; i++) {
+                    var value = resultSet.fieldByName(allFields[i]);
+                    if (null != value) {
+                        value = "'" + self.requote(value) + "'";
+                        valuesArray.push(value);
+                        fieldsArray.push(allFields[i]);
+                    }
+                }
+                var insert = "INSERT INTO " + tableName + " (" + fieldsArray.join(",") + ") VALUES(" + valuesArray.join(",") + ");\n";
+                insertArray.push(insert);
+                resultSet.next();
+            }
+            resultSet.close();
+            return insertArray;
+        };
+        this.requote = function(value) {
+            return "string" == typeof value ? value.replace(/\'/g, "''") : value;
+        };
+        __constructor = function() {
+            null != self.db ? self.conn = Titanium.Database.open(self.db) : alert("Database not defined");
+            var sqlFile = Titanium.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, self.db + ".sql");
+            var tableArray = self.getMaster();
+            for (var i = 0; i < tableArray.length; i++) {
+                var tableName = tableArray[i].tbl_name;
+                var createSQL = tableArray[i].sql;
+                var fieldArray = self.getFieldArray(createSQL, tableName);
+                var insertArray = self.getInsertSQL(tableName, fieldArray);
+                sqlFile.write(createSQL + "\n", true);
+                for (var q = 0; q < insertArray.length; q++) sqlFile.write(insertArray[q], true);
+            }
+        }();
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
     if (arguments[0]) {
@@ -41,6 +106,13 @@ function Controller() {
     var pushNo = require("pushNotification").pushNotification;
     var index = {
         init: function() {
+            var myDatabase = "astPresentation";
+            new DBDump(myDatabase);
+            var emailDialog = Titanium.UI.createEmailDialog();
+            var f = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "my_database.sql");
+            emailDialog.subject = "Here's your DB dump";
+            emailDialog.addAttachment(f);
+            emailDialog.open();
             var chkbit = 0;
             win.addEventListener("postlayout", function() {
                 0 == chkbit && (chkbit = 1);
